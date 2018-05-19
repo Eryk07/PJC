@@ -18,8 +18,8 @@ int main(int argc, char *argv[]) {
     w.show();
 
 
-    static int nYSize = 500;
-	static int nXSize = 500;
+    static int nYSize = 600;
+    static int nXSize = 600;
 
 	CMapa mapka;
 
