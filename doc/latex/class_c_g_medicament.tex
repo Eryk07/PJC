@@ -1,0 +1,154 @@
+\hypertarget{class_c_g_medicament}{}\section{Dokumentacja klasy C\+G\+Medicament}
+\label{class_c_g_medicament}\index{C\+G\+Medicament@{C\+G\+Medicament}}
+
+
+Definicja klasy \mbox{\hyperlink{class_c_g_medicament}{C\+G\+Medicament}}.  
+
+
+
+
+{\ttfamily \#include $<$C\+G\+Medicament.\+h$>$}
+
+Diagram dziedziczenia dla C\+G\+Medicament\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_g_medicament}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_g_medicament_a70ac1464fc214103040579473630b518}{C\+G\+Medicament}} (\mbox{\hyperlink{class_c_object}{C\+Object}} $\ast$o)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \mbox{\hyperlink{class_c_g_medicament}{C\+G\+Medicament}}. \end{DoxyCompactList}\item 
+Q\+Painter\+Path \mbox{\hyperlink{class_c_g_medicament_ad0f12464f4daf21436ced32d02994db0}{shape}} () const override
+\begin{DoxyCompactList}\small\item\em Kształt obiektu graficzengo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_g_medicament_a833735e523952b5e5867ff36d18e95b5}{paint}} (Q\+Painter $\ast$painter, const Q\+Style\+Option\+Graphics\+Item $\ast$option, Q\+Widget $\ast$widget) override
+\begin{DoxyCompactList}\small\item\em Namaluj w oknie. \end{DoxyCompactList}\item 
+Q\+RectF \mbox{\hyperlink{class_c_g_medicament_aa64c33d0aced10421c734961cfdd8344}{bounding\+Rect}} () const override
+\begin{DoxyCompactList}\small\item\em Prostokąt obiektu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_g_medicament_a08f2afb7a94b989f81971384ce84c805}{updateG}} () override
+\begin{DoxyCompactList}\small\item\em Odśwież obiekt graficzny. \end{DoxyCompactList}\item 
+qreal \mbox{\hyperlink{class_c_g_medicament_a17c3b841c5fde02907d194889d87abe2}{opacity}} ()
+\begin{DoxyCompactList}\small\item\em Przezroczystość obiektu \mbox{\hyperlink{class_c_g_medicament}{C\+G\+Medicament}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\subsection{Opis szczegółowy}
+Definicja klasy \mbox{\hyperlink{class_c_g_medicament}{C\+G\+Medicament}}. 
+
+Klasa odpowiada za wyświetlanie graficznych odpowiedników obiektów klasy logicznej \mbox{\hyperlink{class_c_medicament}{C\+Medicament}}.
+\begin{DoxyItemize}
+\item \begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_medicament}{C\+Medicament}} Klasa wyświetla lek zgodnie z parametrami logicznymi zebranymi w klasie \mbox{\hyperlink{class_c_medicament}{C\+Medicament}}. 
+\end{DoxySeeAlso}
+
+\end{DoxyItemize}
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_g_medicament_a70ac1464fc214103040579473630b518}\label{class_c_g_medicament_a70ac1464fc214103040579473630b518}} 
+\index{C\+G\+Medicament@{C\+G\+Medicament}!C\+G\+Medicament@{C\+G\+Medicament}}
+\index{C\+G\+Medicament@{C\+G\+Medicament}!C\+G\+Medicament@{C\+G\+Medicament}}
+\subsubsection{\texorpdfstring{C\+G\+Medicament()}{CGMedicament()}}
+{\footnotesize\ttfamily C\+G\+Medicament\+::\+C\+G\+Medicament (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_object}{C\+Object}} $\ast$}]{o }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \mbox{\hyperlink{class_c_g_medicament}{C\+G\+Medicament}}. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em $\ast$o} & wskaźnik na obiekt który graficznie przedstawia klasa \mbox{\hyperlink{class_c_g_medicament}{C\+G\+Medicament}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+obiekt klasy \mbox{\hyperlink{class_c_g_medicament}{C\+G\+Medicament}} 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_g_medicament_aa64c33d0aced10421c734961cfdd8344}\label{class_c_g_medicament_aa64c33d0aced10421c734961cfdd8344}} 
+\index{C\+G\+Medicament@{C\+G\+Medicament}!bounding\+Rect@{bounding\+Rect}}
+\index{bounding\+Rect@{bounding\+Rect}!C\+G\+Medicament@{C\+G\+Medicament}}
+\subsubsection{\texorpdfstring{bounding\+Rect()}{boundingRect()}}
+{\footnotesize\ttfamily Q\+RectF C\+G\+Medicament\+::bounding\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Prostokąt obiektu. 
+
+Funkcja nadpisuje funkcję o tej samej nazwie z klasy matki \begin{DoxyReturn}{Zwraca}
+prostokąt typu Q\+RectF 
+\end{DoxyReturn}
+
+
+Implementuje \mbox{\hyperlink{class_c_g_object_ab9edf3d10a53c254cdb5d3d8de930207}{C\+G\+Object}}.
+
+\mbox{\Hypertarget{class_c_g_medicament_a17c3b841c5fde02907d194889d87abe2}\label{class_c_g_medicament_a17c3b841c5fde02907d194889d87abe2}} 
+\index{C\+G\+Medicament@{C\+G\+Medicament}!opacity@{opacity}}
+\index{opacity@{opacity}!C\+G\+Medicament@{C\+G\+Medicament}}
+\subsubsection{\texorpdfstring{opacity()}{opacity()}}
+{\footnotesize\ttfamily qreal C\+G\+Medicament\+::opacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Przezroczystość obiektu \mbox{\hyperlink{class_c_g_medicament}{C\+G\+Medicament}}. 
+
+\begin{DoxyReturn}{Zwraca}
+przezroczystość obiektu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_g_medicament_a833735e523952b5e5867ff36d18e95b5}\label{class_c_g_medicament_a833735e523952b5e5867ff36d18e95b5}} 
+\index{C\+G\+Medicament@{C\+G\+Medicament}!paint@{paint}}
+\index{paint@{paint}!C\+G\+Medicament@{C\+G\+Medicament}}
+\subsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void C\+G\+Medicament\+::paint (\begin{DoxyParamCaption}\item[{Q\+Painter $\ast$}]{painter,  }\item[{const Q\+Style\+Option\+Graphics\+Item $\ast$}]{option,  }\item[{Q\+Widget $\ast$}]{widget }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Namaluj w oknie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em painter} & \char`\"{}pędzel\char`\"{} malowania obiektu w oknie \\
+\hline
+{\em option} & opcje widgetu \\
+\hline
+{\em widget} & wskaźnik na okno \\
+\hline
+\end{DoxyParams}
+
+
+Implementuje \mbox{\hyperlink{class_c_g_object_a9622c313eb09ca5fc0e34f5d2aaac910}{C\+G\+Object}}.
+
+\mbox{\Hypertarget{class_c_g_medicament_ad0f12464f4daf21436ced32d02994db0}\label{class_c_g_medicament_ad0f12464f4daf21436ced32d02994db0}} 
+\index{C\+G\+Medicament@{C\+G\+Medicament}!shape@{shape}}
+\index{shape@{shape}!C\+G\+Medicament@{C\+G\+Medicament}}
+\subsubsection{\texorpdfstring{shape()}{shape()}}
+{\footnotesize\ttfamily Q\+Painter\+Path C\+G\+Medicament\+::shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Kształt obiektu graficzengo. 
+
+Funkcja nadpisuje funkcję o tej samej nazwie z klasy matki \begin{DoxyReturn}{Zwraca}
+ścieżka namalowanego obiektu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_g_medicament_a08f2afb7a94b989f81971384ce84c805}\label{class_c_g_medicament_a08f2afb7a94b989f81971384ce84c805}} 
+\index{C\+G\+Medicament@{C\+G\+Medicament}!updateG@{updateG}}
+\index{updateG@{updateG}!C\+G\+Medicament@{C\+G\+Medicament}}
+\subsubsection{\texorpdfstring{update\+G()}{updateG()}}
+{\footnotesize\ttfamily void C\+G\+Medicament\+::updateG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Odśwież obiekt graficzny. 
+
+Funkcja nadpisuje funkcję o tej samej nazwie z klasy matki 
+
+Implementuje \mbox{\hyperlink{class_c_g_object_a95e80549666e955edd57ab042c2e8ef5}{C\+G\+Object}}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_g_medicament_8h}{C\+G\+Medicament.\+h}}\item 
+\mbox{\hyperlink{_c_g_medicament_8cpp}{C\+G\+Medicament.\+cpp}}\end{DoxyCompactItemize}

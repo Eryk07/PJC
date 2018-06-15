@@ -1,0 +1,163 @@
+\hypertarget{class_c_patient}{}\section{Dokumentacja klasy C\+Patient}
+\label{class_c_patient}\index{C\+Patient@{C\+Patient}}
+
+
+Definicja klasy \mbox{\hyperlink{class_c_patient}{C\+Patient}}.  
+
+
+
+
+{\ttfamily \#include $<$C\+Patient.\+h$>$}
+
+Diagram dziedziczenia dla C\+Patient\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_patient}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_patient_a5f2b10b1ad6aead0382a8950b48d2011}{C\+Patient}} (\mbox{\hyperlink{class_c_map}{C\+Map}} $\ast$m)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \mbox{\hyperlink{class_c_patient}{C\+Patient}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_patient_ae744d8c6efd9d57da6592e8f9c272d3f}{$\sim$\+C\+Patient}} ()
+\begin{DoxyCompactList}\small\item\em Domyślny destruktor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_patient_ae0af7da80587d2725acbb31923a41cd0}{move}} ()
+\begin{DoxyCompactList}\small\item\em Ruch pacjenta, jeśli nie ma żadnego obiektu w pobliżu to chodzi losowo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_patient_a40dd4c549f4b40928b95dd4d8f2ad311}{update}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizacja stanu pacjenta -\/ zebranie chorób, wizyt lekarza, zmiana ruchu Sprawdzenie obiektów z mapy, jeśli pacjent\+: najdzie na chorobę to się zaraża, spotka lekarza to zostaje wyleczony, spotka innego pacjenta lub najdzie na lek to ucieka, jeśli wyjdzie za granicę mapy to ucieka, jeśli nic nie ma w otoczeniu to znowu robi losowy ruch. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_patient_abc2af17d253627978b229cc9dcec5e58}{get\+\_\+infected}} (\mbox{\hyperlink{class_c_disease}{C\+Disease}} $\ast$disease)
+\begin{DoxyCompactList}\small\item\em Zarażenie się pacjenta. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_patient_a167c8f49c789e29394ef70964d25d118}{reduce\+\_\+health}} ()
+\begin{DoxyCompactList}\small\item\em Zachorowanie pacjenta -\/ maleje zdrowie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_patient_a4d911cc3aa072d7e88abcb08c2c5d18d}{die}} ()
+\begin{DoxyCompactList}\small\item\em Jeśli zdrowie równe 0 -\/ pacjent umiera \+:(. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_c_disease}{C\+Disease}} $\ast$ $>$ \mbox{\hyperlink{class_c_patient_afab106fb42bcb95d251193cc58d5d4af}{diseases}}
+\begin{DoxyCompactList}\small\item\em Wektor chorób pacjenta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Definicja klasy \mbox{\hyperlink{class_c_patient}{C\+Patient}}. 
+
+Klasa odpowiada za zachowanie obiektów klasy \mbox{\hyperlink{class_c_patient}{C\+Patient}}, która jest pochodną klasy \mbox{\hyperlink{class_c_human}{C\+Human}} na planszy. \begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_patient}{C\+Patient}} Klasa definiuje parametry i zachowanie pacjenta na mapie. 
+\end{DoxySeeAlso}
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_patient_a5f2b10b1ad6aead0382a8950b48d2011}\label{class_c_patient_a5f2b10b1ad6aead0382a8950b48d2011}} 
+\index{C\+Patient@{C\+Patient}!C\+Patient@{C\+Patient}}
+\index{C\+Patient@{C\+Patient}!C\+Patient@{C\+Patient}}
+\subsubsection{\texorpdfstring{C\+Patient()}{CPatient()}}
+{\footnotesize\ttfamily C\+Patient\+::\+C\+Patient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_map}{C\+Map}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \mbox{\hyperlink{class_c_patient}{C\+Patient}}. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em m} & mapa na której znajduje się obiekt klasy \mbox{\hyperlink{class_c_patient}{C\+Patient}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+obiekt klasy \mbox{\hyperlink{class_c_patient}{C\+Patient}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_patient_ae744d8c6efd9d57da6592e8f9c272d3f}\label{class_c_patient_ae744d8c6efd9d57da6592e8f9c272d3f}} 
+\index{C\+Patient@{C\+Patient}!````~C\+Patient@{$\sim$\+C\+Patient}}
+\index{````~C\+Patient@{$\sim$\+C\+Patient}!C\+Patient@{C\+Patient}}
+\subsubsection{\texorpdfstring{$\sim$\+C\+Patient()}{~CPatient()}}
+{\footnotesize\ttfamily C\+Patient\+::$\sim$\+C\+Patient (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Domyślny destruktor. 
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_patient_a4d911cc3aa072d7e88abcb08c2c5d18d}\label{class_c_patient_a4d911cc3aa072d7e88abcb08c2c5d18d}} 
+\index{C\+Patient@{C\+Patient}!die@{die}}
+\index{die@{die}!C\+Patient@{C\+Patient}}
+\subsubsection{\texorpdfstring{die()}{die()}}
+{\footnotesize\ttfamily void C\+Patient\+::die (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Jeśli zdrowie równe 0 -\/ pacjent umiera \+:(. 
+
+\mbox{\Hypertarget{class_c_patient_abc2af17d253627978b229cc9dcec5e58}\label{class_c_patient_abc2af17d253627978b229cc9dcec5e58}} 
+\index{C\+Patient@{C\+Patient}!get\+\_\+infected@{get\+\_\+infected}}
+\index{get\+\_\+infected@{get\+\_\+infected}!C\+Patient@{C\+Patient}}
+\subsubsection{\texorpdfstring{get\+\_\+infected()}{get\_infected()}}
+{\footnotesize\ttfamily void C\+Patient\+::get\+\_\+infected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_disease}{C\+Disease}} $\ast$}]{disease }\end{DoxyParamCaption})}
+
+
+
+Zarażenie się pacjenta. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em $\ast$disease} & wskaźnik na chorobę którą zaraża się pacjent \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_patient_ae0af7da80587d2725acbb31923a41cd0}\label{class_c_patient_ae0af7da80587d2725acbb31923a41cd0}} 
+\index{C\+Patient@{C\+Patient}!move@{move}}
+\index{move@{move}!C\+Patient@{C\+Patient}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void C\+Patient\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Ruch pacjenta, jeśli nie ma żadnego obiektu w pobliżu to chodzi losowo. 
+
+
+
+Implementuje \mbox{\hyperlink{class_c_human_af0a61dfcb43e2d094ab66b29735c4424}{C\+Human}}.
+
+\mbox{\Hypertarget{class_c_patient_a167c8f49c789e29394ef70964d25d118}\label{class_c_patient_a167c8f49c789e29394ef70964d25d118}} 
+\index{C\+Patient@{C\+Patient}!reduce\+\_\+health@{reduce\+\_\+health}}
+\index{reduce\+\_\+health@{reduce\+\_\+health}!C\+Patient@{C\+Patient}}
+\subsubsection{\texorpdfstring{reduce\+\_\+health()}{reduce\_health()}}
+{\footnotesize\ttfamily void C\+Patient\+::reduce\+\_\+health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zachorowanie pacjenta -\/ maleje zdrowie. 
+
+\mbox{\Hypertarget{class_c_patient_a40dd4c549f4b40928b95dd4d8f2ad311}\label{class_c_patient_a40dd4c549f4b40928b95dd4d8f2ad311}} 
+\index{C\+Patient@{C\+Patient}!update@{update}}
+\index{update@{update}!C\+Patient@{C\+Patient}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void C\+Patient\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Aktualizacja stanu pacjenta -\/ zebranie chorób, wizyt lekarza, zmiana ruchu Sprawdzenie obiektów z mapy, jeśli pacjent\+: najdzie na chorobę to się zaraża, spotka lekarza to zostaje wyleczony, spotka innego pacjenta lub najdzie na lek to ucieka, jeśli wyjdzie za granicę mapy to ucieka, jeśli nic nie ma w otoczeniu to znowu robi losowy ruch. 
+
+
+
+Implementuje \mbox{\hyperlink{class_c_human_adb7f7d855ace82f7517bb49f465ea5d9}{C\+Human}}.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_c_patient_afab106fb42bcb95d251193cc58d5d4af}\label{class_c_patient_afab106fb42bcb95d251193cc58d5d4af}} 
+\index{C\+Patient@{C\+Patient}!diseases@{diseases}}
+\index{diseases@{diseases}!C\+Patient@{C\+Patient}}
+\subsubsection{\texorpdfstring{diseases}{diseases}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_c_disease}{C\+Disease}}$\ast$$>$ C\+Patient\+::diseases\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Wektor chorób pacjenta. 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_patient_8h}{C\+Patient.\+h}}\item 
+\mbox{\hyperlink{_c_patient_8cpp}{C\+Patient.\+cpp}}\end{DoxyCompactItemize}

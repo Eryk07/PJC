@@ -1,0 +1,130 @@
+\hypertarget{class_c_non_moving}{}\section{Dokumentacja klasy C\+Non\+Moving}
+\label{class_c_non_moving}\index{C\+Non\+Moving@{C\+Non\+Moving}}
+
+
+Definicja klasy \mbox{\hyperlink{class_c_non_moving}{C\+Non\+Moving}}.  
+
+
+
+
+{\ttfamily \#include $<$C\+Non\+Moving.\+h$>$}
+
+Diagram dziedziczenia dla C\+Non\+Moving\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_non_moving}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_non_moving_a4f1dd301f116c087e277f431480bd088}{C\+Non\+Moving}} (qreal xv, qreal yv, qreal anglev, qreal rangev, qreal healthv, qreal valuev, \mbox{\hyperlink{class_c_map}{C\+Map}} $\ast$m)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \mbox{\hyperlink{class_c_non_moving}{C\+Non\+Moving}}. \end{DoxyCompactList}\item 
+qreal \mbox{\hyperlink{class_c_non_moving_aef911361972d6ace43afb87426ab8f2e}{get\+\_\+value}} ()
+\begin{DoxyCompactList}\small\item\em Zwracanie prywatnej wartości value. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_non_moving_ad17a839c59eb2639623e863a3d6c8740}{update}} ()=0
+\begin{DoxyCompactList}\small\item\em Uaktualnienie pozycji, stanu obiektu \mbox{\hyperlink{class_c_non_moving}{C\+Non\+Moving}} Funkcja wirtualna dziedziczona do klas pochodnych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+qreal \mbox{\hyperlink{class_c_non_moving_a822c4674c5e6d53b11bf135f5d2d42bd}{value}}
+\begin{DoxyCompactList}\small\item\em Wartość wyświetlana przez obiekt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Definicja klasy \mbox{\hyperlink{class_c_non_moving}{C\+Non\+Moving}}. 
+
+Klasa odpowiada za zachowanie obiektów klasy \mbox{\hyperlink{class_c_non_moving}{C\+Non\+Moving}}, która jest pochodną klasy \mbox{\hyperlink{class_c_object}{C\+Object}} na planszy. \begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_object}{C\+Object}} Klasa definiuje parametry i zachowanie obiektów nieruchomych na mapie. 
+\end{DoxySeeAlso}
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_non_moving_a4f1dd301f116c087e277f431480bd088}\label{class_c_non_moving_a4f1dd301f116c087e277f431480bd088}} 
+\index{C\+Non\+Moving@{C\+Non\+Moving}!C\+Non\+Moving@{C\+Non\+Moving}}
+\index{C\+Non\+Moving@{C\+Non\+Moving}!C\+Non\+Moving@{C\+Non\+Moving}}
+\subsubsection{\texorpdfstring{C\+Non\+Moving()}{CNonMoving()}}
+{\footnotesize\ttfamily C\+Non\+Moving\+::\+C\+Non\+Moving (\begin{DoxyParamCaption}\item[{qreal}]{xv,  }\item[{qreal}]{yv,  }\item[{qreal}]{anglev,  }\item[{qreal}]{rangev,  }\item[{qreal}]{healthv,  }\item[{qreal}]{valuev,  }\item[{\mbox{\hyperlink{class_c_map}{C\+Map}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \mbox{\hyperlink{class_c_non_moving}{C\+Non\+Moving}}. 
+
+Konstruktor klasy \mbox{\hyperlink{class_c_non_moving}{C\+Non\+Moving}}, dziedziczony do klas pochodnych\+: \begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_medicament}{C\+Medicament}} 
+
+\mbox{\hyperlink{class_c_disease}{C\+Disease}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parametry}
+{\em xv} & początkowa pozycja obiektu w osi x \\
+\hline
+{\em yv} & początkowa pozycja obiektu w osi y \\
+\hline
+{\em anglev} & początkowy kąt obrócenia obiektu \\
+\hline
+{\em rangev} & zakres obiektu \\
+\hline
+{\em healthv} & zdrowie obiektu \\
+\hline
+{\em valuev} & wartość jaką ma obiekt na mapie \\
+\hline
+{\em $\ast$m} & mapa na której znajduje się obiekt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+obiekt klasy \mbox{\hyperlink{class_c_non_moving}{C\+Non\+Moving}} 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_non_moving_aef911361972d6ace43afb87426ab8f2e}\label{class_c_non_moving_aef911361972d6ace43afb87426ab8f2e}} 
+\index{C\+Non\+Moving@{C\+Non\+Moving}!get\+\_\+value@{get\+\_\+value}}
+\index{get\+\_\+value@{get\+\_\+value}!C\+Non\+Moving@{C\+Non\+Moving}}
+\subsubsection{\texorpdfstring{get\+\_\+value()}{get\_value()}}
+{\footnotesize\ttfamily qreal C\+Non\+Moving\+::get\+\_\+value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwracanie prywatnej wartości value. 
+
+\begin{DoxyReturn}{Zwraca}
+value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_non_moving_ad17a839c59eb2639623e863a3d6c8740}\label{class_c_non_moving_ad17a839c59eb2639623e863a3d6c8740}} 
+\index{C\+Non\+Moving@{C\+Non\+Moving}!update@{update}}
+\index{update@{update}!C\+Non\+Moving@{C\+Non\+Moving}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void C\+Non\+Moving\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Uaktualnienie pozycji, stanu obiektu \mbox{\hyperlink{class_c_non_moving}{C\+Non\+Moving}} Funkcja wirtualna dziedziczona do klas pochodnych. 
+
+
+
+Implementuje \mbox{\hyperlink{class_c_object_acb42ca516e836d0267ddb9a0556916a9}{C\+Object}}.
+
+
+
+Implementowany w \mbox{\hyperlink{class_c_disease_a2f8e7ad1e743ace0540a09a6f620d6d7}{C\+Disease}} i \mbox{\hyperlink{class_c_medicament_a3568bc88e5fa9db63e82fcad13ce90eb}{C\+Medicament}}.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_c_non_moving_a822c4674c5e6d53b11bf135f5d2d42bd}\label{class_c_non_moving_a822c4674c5e6d53b11bf135f5d2d42bd}} 
+\index{C\+Non\+Moving@{C\+Non\+Moving}!value@{value}}
+\index{value@{value}!C\+Non\+Moving@{C\+Non\+Moving}}
+\subsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily qreal C\+Non\+Moving\+::value\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Wartość wyświetlana przez obiekt. 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_non_moving_8h}{C\+Non\+Moving.\+h}}\item 
+\mbox{\hyperlink{_c_non_moving_8cpp}{C\+Non\+Moving.\+cpp}}\end{DoxyCompactItemize}

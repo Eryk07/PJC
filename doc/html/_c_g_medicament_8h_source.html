@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Liszaj: Plik źródłowy CGMedicament.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="medicament.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Liszaj
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">CGMedicament.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_c_g_medicament_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CGMEDICAMENT_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CGMEDICAMENT_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_c_g_object_8h.html">CGObject.h</a>&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_c_medicament_8h.html">CMedicament.h</a>&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_c_g_medicament.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_g_medicament.html">CGMedicament</a> :<span class="keyword">public</span> <a class="code" href="class_c_g_object.html">CGObject</a></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_c_g_medicament.html#a70ac1464fc214103040579473630b518">CGMedicament</a>(<a class="code" href="class_c_object.html">CObject</a> *o);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    QPainterPath <a class="code" href="class_c_g_medicament.html#ad0f12464f4daf21436ced32d02994db0">shape</a>() <span class="keyword">const override</span>;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_g_medicament.html#a833735e523952b5e5867ff36d18e95b5">paint</a>(QPainter *painter, <span class="keyword">const</span> QStyleOptionGraphicsItem *option,</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;               QWidget *widget) <span class="keyword">override</span>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    QRectF <a class="code" href="class_c_g_medicament.html#aa64c33d0aced10421c734961cfdd8344">boundingRect</a>() <span class="keyword">const override</span>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_g_medicament.html#a08f2afb7a94b989f81971384ce84c805">updateG</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    qreal <a class="code" href="class_c_g_medicament.html#a17c3b841c5fde02907d194889d87abe2">opacity</a>();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    QPixmap medicament = QPixmap(<span class="stringliteral">&quot;:/new/grafika/medicament.png&quot;</span>);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif // CGMEDICAMENT_H</span></div><div class="ttc" id="class_c_g_medicament_html_a833735e523952b5e5867ff36d18e95b5"><div class="ttname"><a href="class_c_g_medicament.html#a833735e523952b5e5867ff36d18e95b5">CGMedicament::paint</a></div><div class="ttdeci">void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</div><div class="ttdoc">Namaluj w oknie. </div><div class="ttdef"><b>Definition:</b> CGMedicament.cpp:24</div></div>
+<div class="ttc" id="_c_g_object_8h_html"><div class="ttname"><a href="_c_g_object_8h.html">CGObject.h</a></div></div>
+<div class="ttc" id="class_c_g_medicament_html_aa64c33d0aced10421c734961cfdd8344"><div class="ttname"><a href="class_c_g_medicament.html#aa64c33d0aced10421c734961cfdd8344">CGMedicament::boundingRect</a></div><div class="ttdeci">QRectF boundingRect() const override</div><div class="ttdoc">Prostokąt obiektu. </div><div class="ttdef"><b>Definition:</b> CGMedicament.cpp:18</div></div>
+<div class="ttc" id="class_c_g_medicament_html_a17c3b841c5fde02907d194889d87abe2"><div class="ttname"><a href="class_c_g_medicament.html#a17c3b841c5fde02907d194889d87abe2">CGMedicament::opacity</a></div><div class="ttdeci">qreal opacity()</div><div class="ttdoc">Przezroczystość obiektu CGMedicament. </div><div class="ttdef"><b>Definition:</b> CGMedicament.cpp:14</div></div>
+<div class="ttc" id="class_c_g_medicament_html_ad0f12464f4daf21436ced32d02994db0"><div class="ttname"><a href="class_c_g_medicament.html#ad0f12464f4daf21436ced32d02994db0">CGMedicament::shape</a></div><div class="ttdeci">QPainterPath shape() const override</div><div class="ttdoc">Kształt obiektu graficzengo. </div><div class="ttdef"><b>Definition:</b> CGMedicament.cpp:8</div></div>
+<div class="ttc" id="_c_medicament_8h_html"><div class="ttname"><a href="_c_medicament_8h.html">CMedicament.h</a></div></div>
+<div class="ttc" id="class_c_g_medicament_html"><div class="ttname"><a href="class_c_g_medicament.html">CGMedicament</a></div><div class="ttdoc">Definicja klasy CGMedicament. </div><div class="ttdef"><b>Definition:</b> CGMedicament.h:11</div></div>
+<div class="ttc" id="class_c_g_medicament_html_a70ac1464fc214103040579473630b518"><div class="ttname"><a href="class_c_g_medicament.html#a70ac1464fc214103040579473630b518">CGMedicament::CGMedicament</a></div><div class="ttdeci">CGMedicament(CObject *o)</div><div class="ttdoc">Konstruktor klasy CGMedicament. </div><div class="ttdef"><b>Definition:</b> CGMedicament.cpp:3</div></div>
+<div class="ttc" id="class_c_g_medicament_html_a08f2afb7a94b989f81971384ce84c805"><div class="ttname"><a href="class_c_g_medicament.html#a08f2afb7a94b989f81971384ce84c805">CGMedicament::updateG</a></div><div class="ttdeci">void updateG() override</div><div class="ttdoc">Odśwież obiekt graficzny. </div><div class="ttdef"><b>Definition:</b> CGMedicament.cpp:31</div></div>
+<div class="ttc" id="class_c_g_object_html"><div class="ttname"><a href="class_c_g_object.html">CGObject</a></div><div class="ttdoc">Definicja klasy CGObject. </div><div class="ttdef"><b>Definition:</b> CGObject.h:15</div></div>
+<div class="ttc" id="class_c_object_html"><div class="ttname"><a href="class_c_object.html">CObject</a></div><div class="ttdoc">Definicja klasy CObject. </div><div class="ttdef"><b>Definition:</b> CObject.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

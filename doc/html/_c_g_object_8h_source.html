@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Liszaj: Plik źródłowy CGObject.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="medicament.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Liszaj
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">CGObject.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_c_g_object_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CGOBJECT_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CGOBJECT_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;QGraphicsItem&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QPainter&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_c_object_8h.html">CObject.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_object.html">CObject</a>;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_map.html">CMap</a>;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_c_g_object.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_g_object.html">CGObject</a> :<span class="keyword">public</span> QGraphicsItem</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_c_g_object.html#a8955574357e33ce28957c4ff42154cfb">   19</a></span>&#160;    <a class="code" href="class_c_object.html">CObject</a> *<a class="code" href="class_c_g_object.html#a8955574357e33ce28957c4ff42154cfb">object</a>;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_c_g_object.html#a8cfd8e7d917cd445ea8f5284f709452d">   21</a></span>&#160;    <a class="code" href="class_c_map.html">CMap</a> *<a class="code" href="class_c_g_object.html#a8cfd8e7d917cd445ea8f5284f709452d">map</a>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_c_g_object.html#a40a7f41342b3b791a8854b3397378d5d">CGObject</a>(<a class="code" href="class_c_object.html">CObject</a> *o);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_c_object.html">CObject</a>* <a class="code" href="class_c_g_object.html#a711377d1f415ee8f9944fbad886e0ce4">get_CObject</a>();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_g_object.html#a9622c313eb09ca5fc0e34f5d2aaac910">paint</a>(QPainter *painter, <span class="keyword">const</span> QStyleOptionGraphicsItem *option,</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                       QWidget *widget) = 0;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> QRectF <a class="code" href="class_c_g_object.html#ab9edf3d10a53c254cdb5d3d8de930207">boundingRect</a>() <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_g_object.html#a95e80549666e955edd57ab042c2e8ef5">updateG</a>() = 0;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif // CGOBJECT_H</span></div><div class="ttc" id="class_c_g_object_html_a40a7f41342b3b791a8854b3397378d5d"><div class="ttname"><a href="class_c_g_object.html#a40a7f41342b3b791a8854b3397378d5d">CGObject::CGObject</a></div><div class="ttdeci">CGObject(CObject *o)</div><div class="ttdoc">Konstruktor klasy CGObject, dziedziczony przez klasy pochodne. </div><div class="ttdef"><b>Definition:</b> CGObject.cpp:3</div></div>
+<div class="ttc" id="_c_object_8h_html"><div class="ttname"><a href="_c_object_8h.html">CObject.h</a></div></div>
+<div class="ttc" id="class_c_g_object_html_a9622c313eb09ca5fc0e34f5d2aaac910"><div class="ttname"><a href="class_c_g_object.html#a9622c313eb09ca5fc0e34f5d2aaac910">CGObject::paint</a></div><div class="ttdeci">virtual void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)=0</div><div class="ttdoc">Namaluj w oknie. </div></div>
+<div class="ttc" id="class_c_g_object_html_a711377d1f415ee8f9944fbad886e0ce4"><div class="ttname"><a href="class_c_g_object.html#a711377d1f415ee8f9944fbad886e0ce4">CGObject::get_CObject</a></div><div class="ttdeci">CObject * get_CObject()</div><div class="ttdoc">Wczytaj CObject Wczytuje obiekt klasy CObject, ustale jego pozycję na mapie zgodnie z jego logiką ...</div><div class="ttdef"><b>Definition:</b> CGObject.cpp:10</div></div>
+<div class="ttc" id="class_c_map_html"><div class="ttname"><a href="class_c_map.html">CMap</a></div><div class="ttdoc">Definicja klasy CMap. </div><div class="ttdef"><b>Definition:</b> CMap.h:16</div></div>
+<div class="ttc" id="class_c_g_object_html_a8955574357e33ce28957c4ff42154cfb"><div class="ttname"><a href="class_c_g_object.html#a8955574357e33ce28957c4ff42154cfb">CGObject::object</a></div><div class="ttdeci">CObject * object</div><div class="ttdoc">Obiekt na który wskazuje obiekt graficzny. </div><div class="ttdef"><b>Definition:</b> CGObject.h:19</div></div>
+<div class="ttc" id="class_c_g_object_html_ab9edf3d10a53c254cdb5d3d8de930207"><div class="ttname"><a href="class_c_g_object.html#ab9edf3d10a53c254cdb5d3d8de930207">CGObject::boundingRect</a></div><div class="ttdeci">virtual QRectF boundingRect() const =0</div><div class="ttdoc">Prostokąt obiektu. </div></div>
+<div class="ttc" id="class_c_g_object_html_a95e80549666e955edd57ab042c2e8ef5"><div class="ttname"><a href="class_c_g_object.html#a95e80549666e955edd57ab042c2e8ef5">CGObject::updateG</a></div><div class="ttdeci">virtual void updateG()=0</div><div class="ttdoc">Odśwież obiekt graficzny. </div></div>
+<div class="ttc" id="class_c_g_object_html"><div class="ttname"><a href="class_c_g_object.html">CGObject</a></div><div class="ttdoc">Definicja klasy CGObject. </div><div class="ttdef"><b>Definition:</b> CGObject.h:15</div></div>
+<div class="ttc" id="class_c_object_html"><div class="ttname"><a href="class_c_object.html">CObject</a></div><div class="ttdoc">Definicja klasy CObject. </div><div class="ttdef"><b>Definition:</b> CObject.h:13</div></div>
+<div class="ttc" id="class_c_g_object_html_a8cfd8e7d917cd445ea8f5284f709452d"><div class="ttname"><a href="class_c_g_object.html#a8cfd8e7d917cd445ea8f5284f709452d">CGObject::map</a></div><div class="ttdeci">CMap * map</div><div class="ttdoc">Mapa na której znajduje się obiekt graficzny. </div><div class="ttdef"><b>Definition:</b> CGObject.h:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

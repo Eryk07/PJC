@@ -1,0 +1,159 @@
+\hypertarget{class_c_map}{}\section{Dokumentacja klasy C\+Map}
+\label{class_c_map}\index{C\+Map@{C\+Map}}
+
+
+Definicja klasy \mbox{\hyperlink{class_c_map}{C\+Map}}.  
+
+
+
+
+{\ttfamily \#include $<$C\+Map.\+h$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_map_a23632998cdecdd0b9c77c799e5d5d51b}{C\+Map}} (Q\+Graphics\+Scene $\ast$scene)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \mbox{\hyperlink{class_c_map}{C\+Map}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_c_object}{C\+Object}} $\ast$ $>$ \mbox{\hyperlink{class_c_map_a7482c6d9d6c9a0b4d4a8fb8b0d9f78c1}{get\+\_\+near\+Obj\+List}} (\mbox{\hyperlink{class_c_object}{C\+Object}} $\ast$o)
+\begin{DoxyCompactList}\small\item\em Zebranie obiektów w pobliżu danego obiektu. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_c_g_object}{C\+G\+Object}} $\ast$ $>$ \mbox{\hyperlink{class_c_map_a92ba9186009ccd9c773c3647ff855d36}{get\+\_\+near\+Obj\+G\+List}} (\mbox{\hyperlink{class_c_g_object}{C\+G\+Object}} $\ast$go)
+\begin{DoxyCompactList}\small\item\em Zebranie obiektów graficznych w pobliżu danego obiektu graficznego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_map_a4b22b964e9d16e428c0a56b15b235c82}{add\+Object}} (\mbox{\hyperlink{class_c_object}{C\+Object}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Dodanie danego obiektu do wektora obiektów mapy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_map_adfb0980e5f2153cd6b287a010795c6b4}{add\+G\+Object}} (\mbox{\hyperlink{class_c_g_object}{C\+G\+Object}} $\ast$gobject)
+\begin{DoxyCompactList}\small\item\em Dodanie danego obiektu graficznego do wektora obiektów graficznych mapy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_map_a55bccb7dd240a21de6e5d12df054d0cb}{delete\+From\+Map}} (\mbox{\hyperlink{class_c_object}{C\+Object}} $\ast$o)
+\begin{DoxyCompactList}\small\item\em Usunięcie obiektu i jego graficznego odpowiednika z mapy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Przyjaciele}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_c_map_a70c17e1cad4feb7c09e435afef6dd148}{C\+Program}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Definicja klasy \mbox{\hyperlink{class_c_map}{C\+Map}}. 
+
+Klasa odpowiada za wyświetlanie zawartych w niej obiektów graficznych klasy \mbox{\hyperlink{class_c_g_object}{C\+G\+Object}}. \begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_g_object}{C\+G\+Object}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_map_a23632998cdecdd0b9c77c799e5d5d51b}\label{class_c_map_a23632998cdecdd0b9c77c799e5d5d51b}} 
+\index{C\+Map@{C\+Map}!C\+Map@{C\+Map}}
+\index{C\+Map@{C\+Map}!C\+Map@{C\+Map}}
+\subsubsection{\texorpdfstring{C\+Map()}{CMap()}}
+{\footnotesize\ttfamily C\+Map\+::\+C\+Map (\begin{DoxyParamCaption}\item[{Q\+Graphics\+Scene $\ast$}]{scene }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \mbox{\hyperlink{class_c_map}{C\+Map}}. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em $\ast$scene} & wskaźnik na scenę wyświetlaną w oknie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+obiekt klasy \mbox{\hyperlink{class_c_map}{C\+Map}} 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_map_adfb0980e5f2153cd6b287a010795c6b4}\label{class_c_map_adfb0980e5f2153cd6b287a010795c6b4}} 
+\index{C\+Map@{C\+Map}!add\+G\+Object@{add\+G\+Object}}
+\index{add\+G\+Object@{add\+G\+Object}!C\+Map@{C\+Map}}
+\subsubsection{\texorpdfstring{add\+G\+Object()}{addGObject()}}
+{\footnotesize\ttfamily void C\+Map\+::add\+G\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_g_object}{C\+G\+Object}} $\ast$}]{gobject }\end{DoxyParamCaption})}
+
+
+
+Dodanie danego obiektu graficznego do wektora obiektów graficznych mapy. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em $\ast$gobject} & wskaźnik na dany obiekt graficzny \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_map_a4b22b964e9d16e428c0a56b15b235c82}\label{class_c_map_a4b22b964e9d16e428c0a56b15b235c82}} 
+\index{C\+Map@{C\+Map}!add\+Object@{add\+Object}}
+\index{add\+Object@{add\+Object}!C\+Map@{C\+Map}}
+\subsubsection{\texorpdfstring{add\+Object()}{addObject()}}
+{\footnotesize\ttfamily void C\+Map\+::add\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_object}{C\+Object}} $\ast$}]{object }\end{DoxyParamCaption})}
+
+
+
+Dodanie danego obiektu do wektora obiektów mapy. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em $\ast$object} & wskaźnik na dany obiekt \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_map_a55bccb7dd240a21de6e5d12df054d0cb}\label{class_c_map_a55bccb7dd240a21de6e5d12df054d0cb}} 
+\index{C\+Map@{C\+Map}!delete\+From\+Map@{delete\+From\+Map}}
+\index{delete\+From\+Map@{delete\+From\+Map}!C\+Map@{C\+Map}}
+\subsubsection{\texorpdfstring{delete\+From\+Map()}{deleteFromMap()}}
+{\footnotesize\ttfamily void C\+Map\+::delete\+From\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_object}{C\+Object}} $\ast$}]{o }\end{DoxyParamCaption})}
+
+
+
+Usunięcie obiektu i jego graficznego odpowiednika z mapy. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em $\ast$o} & wskaźnik na dany obiek \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_map_a92ba9186009ccd9c773c3647ff855d36}\label{class_c_map_a92ba9186009ccd9c773c3647ff855d36}} 
+\index{C\+Map@{C\+Map}!get\+\_\+near\+Obj\+G\+List@{get\+\_\+near\+Obj\+G\+List}}
+\index{get\+\_\+near\+Obj\+G\+List@{get\+\_\+near\+Obj\+G\+List}!C\+Map@{C\+Map}}
+\subsubsection{\texorpdfstring{get\+\_\+near\+Obj\+G\+List()}{get\_nearObjGList()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_c_g_object}{C\+G\+Object}}$\ast$$>$ C\+Map\+::get\+\_\+near\+Obj\+G\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_g_object}{C\+G\+Object}} $\ast$}]{go }\end{DoxyParamCaption})}
+
+
+
+Zebranie obiektów graficznych w pobliżu danego obiektu graficznego. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em $\ast$go} & wskaźnik na dany obiekt graficzny \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wektor obiektów graaficznych w pobliżu danego obiektu graficznego 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_map_a7482c6d9d6c9a0b4d4a8fb8b0d9f78c1}\label{class_c_map_a7482c6d9d6c9a0b4d4a8fb8b0d9f78c1}} 
+\index{C\+Map@{C\+Map}!get\+\_\+near\+Obj\+List@{get\+\_\+near\+Obj\+List}}
+\index{get\+\_\+near\+Obj\+List@{get\+\_\+near\+Obj\+List}!C\+Map@{C\+Map}}
+\subsubsection{\texorpdfstring{get\+\_\+near\+Obj\+List()}{get\_nearObjList()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_c_object}{C\+Object}} $\ast$ $>$ C\+Map\+::get\+\_\+near\+Obj\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_object}{C\+Object}} $\ast$}]{o }\end{DoxyParamCaption})}
+
+
+
+Zebranie obiektów w pobliżu danego obiektu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em $\ast$o} & wskaźnik na dany obiekt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+wektor obiektów w pobliżu danego obiektu 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacja przyjaciół i funkcji związanych}
+\mbox{\Hypertarget{class_c_map_a70c17e1cad4feb7c09e435afef6dd148}\label{class_c_map_a70c17e1cad4feb7c09e435afef6dd148}} 
+\index{C\+Map@{C\+Map}!C\+Program@{C\+Program}}
+\index{C\+Program@{C\+Program}!C\+Map@{C\+Map}}
+\subsubsection{\texorpdfstring{C\+Program}{CProgram}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_c_program}{C\+Program}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_map_8h}{C\+Map.\+h}}\item 
+\mbox{\hyperlink{_c_map_8cpp}{C\+Map.\+cpp}}\end{DoxyCompactItemize}

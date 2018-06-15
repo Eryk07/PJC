@@ -1,0 +1,101 @@
+\hypertarget{class_c_disease}{}\section{Dokumentacja klasy C\+Disease}
+\label{class_c_disease}\index{C\+Disease@{C\+Disease}}
+
+
+Definicja klasy \mbox{\hyperlink{class_c_disease}{C\+Disease}}.  
+
+
+
+
+{\ttfamily \#include $<$C\+Disease.\+h$>$}
+
+Diagram dziedziczenia dla C\+Disease\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_disease}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_disease_a28bd723c5f215b32e1394f8e1c38bfb3}{C\+Disease}} (\mbox{\hyperlink{class_c_map}{C\+Map}} $\ast$m)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \mbox{\hyperlink{class_c_disease}{C\+Disease}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_disease_a8f75741e14b8ddc657bd49df3751cb99}{$\sim$\+C\+Disease}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy \mbox{\hyperlink{class_c_disease}{C\+Disease}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_disease_a2f8e7ad1e743ace0540a09a6f620d6d7}{update}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizacja stanu obiektu choroba. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_disease_ad0183fc219d8292b6e398a46ea700b2c}{infect}} ()
+\begin{DoxyCompactList}\small\item\em Infekcja pacjenta który przeszedł przez chorobę \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\subsection{Opis szczegółowy}
+Definicja klasy \mbox{\hyperlink{class_c_disease}{C\+Disease}}. 
+
+Klasa odpowiada za zachowanie obiektów klasy \mbox{\hyperlink{class_c_disease}{C\+Disease}}, która jest pochodną klasy \mbox{\hyperlink{class_c_non_moving}{C\+Non\+Moving}} na planszy. \begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_non_moving}{C\+Non\+Moving}} Klasa definiuje parametry i zachowanie choroby na mapie. 
+\end{DoxySeeAlso}
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_disease_a28bd723c5f215b32e1394f8e1c38bfb3}\label{class_c_disease_a28bd723c5f215b32e1394f8e1c38bfb3}} 
+\index{C\+Disease@{C\+Disease}!C\+Disease@{C\+Disease}}
+\index{C\+Disease@{C\+Disease}!C\+Disease@{C\+Disease}}
+\subsubsection{\texorpdfstring{C\+Disease()}{CDisease()}}
+{\footnotesize\ttfamily C\+Disease\+::\+C\+Disease (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_map}{C\+Map}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \mbox{\hyperlink{class_c_disease}{C\+Disease}}. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em $\ast$m} & mapa na której znajduje się obiekt klasy \mbox{\hyperlink{class_c_disease}{C\+Disease}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+obiekt klasy \mbox{\hyperlink{class_c_disease}{C\+Disease}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_disease_a8f75741e14b8ddc657bd49df3751cb99}\label{class_c_disease_a8f75741e14b8ddc657bd49df3751cb99}} 
+\index{C\+Disease@{C\+Disease}!````~C\+Disease@{$\sim$\+C\+Disease}}
+\index{````~C\+Disease@{$\sim$\+C\+Disease}!C\+Disease@{C\+Disease}}
+\subsubsection{\texorpdfstring{$\sim$\+C\+Disease()}{~CDisease()}}
+{\footnotesize\ttfamily C\+Disease\+::$\sim$\+C\+Disease (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klasy \mbox{\hyperlink{class_c_disease}{C\+Disease}}. 
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_disease_ad0183fc219d8292b6e398a46ea700b2c}\label{class_c_disease_ad0183fc219d8292b6e398a46ea700b2c}} 
+\index{C\+Disease@{C\+Disease}!infect@{infect}}
+\index{infect@{infect}!C\+Disease@{C\+Disease}}
+\subsubsection{\texorpdfstring{infect()}{infect()}}
+{\footnotesize\ttfamily void C\+Disease\+::infect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Infekcja pacjenta który przeszedł przez chorobę 
+
+\mbox{\Hypertarget{class_c_disease_a2f8e7ad1e743ace0540a09a6f620d6d7}\label{class_c_disease_a2f8e7ad1e743ace0540a09a6f620d6d7}} 
+\index{C\+Disease@{C\+Disease}!update@{update}}
+\index{update@{update}!C\+Disease@{C\+Disease}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void C\+Disease\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Aktualizacja stanu obiektu choroba. 
+
+Choroby rosną wraz z upływem czasu. 
+
+Implementuje \mbox{\hyperlink{class_c_non_moving_ad17a839c59eb2639623e863a3d6c8740}{C\+Non\+Moving}}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_disease_8h}{C\+Disease.\+h}}\item 
+\mbox{\hyperlink{_c_disease_8cpp}{C\+Disease.\+cpp}}\end{DoxyCompactItemize}

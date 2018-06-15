@@ -1,0 +1,168 @@
+\hypertarget{class_c_g_object}{}\section{Dokumentacja klasy C\+G\+Object}
+\label{class_c_g_object}\index{C\+G\+Object@{C\+G\+Object}}
+
+
+Definicja klasy \mbox{\hyperlink{class_c_g_object}{C\+G\+Object}}.  
+
+
+
+
+{\ttfamily \#include $<$C\+G\+Object.\+h$>$}
+
+Diagram dziedziczenia dla C\+G\+Object\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_g_object}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_g_object_a40a7f41342b3b791a8854b3397378d5d}{C\+G\+Object}} (\mbox{\hyperlink{class_c_object}{C\+Object}} $\ast$o)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \mbox{\hyperlink{class_c_g_object}{C\+G\+Object}}, dziedziczony przez klasy pochodne. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_object}{C\+Object}} $\ast$ \mbox{\hyperlink{class_c_g_object_a711377d1f415ee8f9944fbad886e0ce4}{get\+\_\+\+C\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Wczytaj \mbox{\hyperlink{class_c_object}{C\+Object}} Wczytuje obiekt klasy \mbox{\hyperlink{class_c_object}{C\+Object}}, ustale jego pozycję na mapie zgodnie z jego logiką \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_g_object_a9622c313eb09ca5fc0e34f5d2aaac910}{paint}} (Q\+Painter $\ast$painter, const Q\+Style\+Option\+Graphics\+Item $\ast$option, Q\+Widget $\ast$widget)=0
+\begin{DoxyCompactList}\small\item\em Namaluj w oknie. \end{DoxyCompactList}\item 
+virtual Q\+RectF \mbox{\hyperlink{class_c_g_object_ab9edf3d10a53c254cdb5d3d8de930207}{bounding\+Rect}} () const =0
+\begin{DoxyCompactList}\small\item\em Prostokąt obiektu. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_g_object_a95e80549666e955edd57ab042c2e8ef5}{updateG}} ()=0
+\begin{DoxyCompactList}\small\item\em Odśwież obiekt graficzny. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_object}{C\+Object}} $\ast$ \mbox{\hyperlink{class_c_g_object_a8955574357e33ce28957c4ff42154cfb}{object}}
+\begin{DoxyCompactList}\small\item\em Obiekt na który wskazuje obiekt graficzny. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_map}{C\+Map}} $\ast$ \mbox{\hyperlink{class_c_g_object_a8cfd8e7d917cd445ea8f5284f709452d}{map}}
+\begin{DoxyCompactList}\small\item\em Mapa na której znajduje się obiekt graficzny. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Definicja klasy \mbox{\hyperlink{class_c_g_object}{C\+G\+Object}}. 
+
+Klasa odpowiada za wyświetlanie graficznych odpowiedników obiektów klasy logicznej \mbox{\hyperlink{class_c_object}{C\+Object}}.
+\begin{DoxyItemize}
+\item \begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_object}{C\+Object}} Klasa jest matką pozostałych klas graficznych\+: \mbox{\hyperlink{class_c_g_disease}{C\+G\+Disease}}, \mbox{\hyperlink{class_c_g_doctor}{C\+G\+Doctor}}, \mbox{\hyperlink{class_c_g_medicament}{C\+G\+Medicament}}, \mbox{\hyperlink{class_c_g_patient}{C\+G\+Patient}}, . 
+\end{DoxySeeAlso}
+
+\end{DoxyItemize}
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_g_object_a40a7f41342b3b791a8854b3397378d5d}\label{class_c_g_object_a40a7f41342b3b791a8854b3397378d5d}} 
+\index{C\+G\+Object@{C\+G\+Object}!C\+G\+Object@{C\+G\+Object}}
+\index{C\+G\+Object@{C\+G\+Object}!C\+G\+Object@{C\+G\+Object}}
+\subsubsection{\texorpdfstring{C\+G\+Object()}{CGObject()}}
+{\footnotesize\ttfamily C\+G\+Object\+::\+C\+G\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_object}{C\+Object}} $\ast$}]{o }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \mbox{\hyperlink{class_c_g_object}{C\+G\+Object}}, dziedziczony przez klasy pochodne. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em $\ast$o} & wskaźnik na obiekt który graficznie przedstawia klasa \mbox{\hyperlink{class_c_g_object}{C\+G\+Object}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+obiekt klasy \mbox{\hyperlink{class_c_g_object}{C\+G\+Object}} 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_g_object_ab9edf3d10a53c254cdb5d3d8de930207}\label{class_c_g_object_ab9edf3d10a53c254cdb5d3d8de930207}} 
+\index{C\+G\+Object@{C\+G\+Object}!bounding\+Rect@{bounding\+Rect}}
+\index{bounding\+Rect@{bounding\+Rect}!C\+G\+Object@{C\+G\+Object}}
+\subsubsection{\texorpdfstring{bounding\+Rect()}{boundingRect()}}
+{\footnotesize\ttfamily virtual Q\+RectF C\+G\+Object\+::bounding\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Prostokąt obiektu. 
+
+Funkcja wirtualna, dziedziczona do klas pochodnych \begin{DoxyReturn}{Zwraca}
+prostokąt typu Q\+RectF 
+\end{DoxyReturn}
+
+
+Implementowany w \mbox{\hyperlink{class_c_g_patient_ae0150504523660b474078c309e2a8d3f}{C\+G\+Patient}}, \mbox{\hyperlink{class_c_g_disease_ab2652078d767e244b586577cbda52beb}{C\+G\+Disease}}, \mbox{\hyperlink{class_c_g_doctor_a54058ba434d8d7d0c6bf16c1a9f6536a}{C\+G\+Doctor}} i \mbox{\hyperlink{class_c_g_medicament_aa64c33d0aced10421c734961cfdd8344}{C\+G\+Medicament}}.
+
+\mbox{\Hypertarget{class_c_g_object_a711377d1f415ee8f9944fbad886e0ce4}\label{class_c_g_object_a711377d1f415ee8f9944fbad886e0ce4}} 
+\index{C\+G\+Object@{C\+G\+Object}!get\+\_\+\+C\+Object@{get\+\_\+\+C\+Object}}
+\index{get\+\_\+\+C\+Object@{get\+\_\+\+C\+Object}!C\+G\+Object@{C\+G\+Object}}
+\subsubsection{\texorpdfstring{get\+\_\+\+C\+Object()}{get\_CObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_object}{C\+Object}} $\ast$ C\+G\+Object\+::get\+\_\+\+C\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Wczytaj \mbox{\hyperlink{class_c_object}{C\+Object}} Wczytuje obiekt klasy \mbox{\hyperlink{class_c_object}{C\+Object}}, ustale jego pozycję na mapie zgodnie z jego logiką 
+
+\begin{DoxyReturn}{Zwraca}
+obiekt typu \mbox{\hyperlink{class_c_object}{C\+Object}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_g_object_a9622c313eb09ca5fc0e34f5d2aaac910}\label{class_c_g_object_a9622c313eb09ca5fc0e34f5d2aaac910}} 
+\index{C\+G\+Object@{C\+G\+Object}!paint@{paint}}
+\index{paint@{paint}!C\+G\+Object@{C\+G\+Object}}
+\subsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily virtual void C\+G\+Object\+::paint (\begin{DoxyParamCaption}\item[{Q\+Painter $\ast$}]{painter,  }\item[{const Q\+Style\+Option\+Graphics\+Item $\ast$}]{option,  }\item[{Q\+Widget $\ast$}]{widget }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Namaluj w oknie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em painter} & \char`\"{}pędzel\char`\"{} malowania obiektu w oknie \\
+\hline
+{\em option} & opcje widgetu \\
+\hline
+{\em widget} & wskaźnik na okno \\
+\hline
+\end{DoxyParams}
+
+
+Implementowany w \mbox{\hyperlink{class_c_g_patient_a37695c047e8c5fb20e5d501e359f3344}{C\+G\+Patient}}, \mbox{\hyperlink{class_c_g_disease_a78fe4aba5b2efcbcd2a65555421bf359}{C\+G\+Disease}}, \mbox{\hyperlink{class_c_g_doctor_a1a4b50cd9ab7f5a94a47d97e58c9475d}{C\+G\+Doctor}} i \mbox{\hyperlink{class_c_g_medicament_a833735e523952b5e5867ff36d18e95b5}{C\+G\+Medicament}}.
+
+\mbox{\Hypertarget{class_c_g_object_a95e80549666e955edd57ab042c2e8ef5}\label{class_c_g_object_a95e80549666e955edd57ab042c2e8ef5}} 
+\index{C\+G\+Object@{C\+G\+Object}!updateG@{updateG}}
+\index{updateG@{updateG}!C\+G\+Object@{C\+G\+Object}}
+\subsubsection{\texorpdfstring{update\+G()}{updateG()}}
+{\footnotesize\ttfamily virtual void C\+G\+Object\+::updateG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Odśwież obiekt graficzny. 
+
+Funkcja wirtualna, dziedziczona do klas pochodnych 
+
+Implementowany w \mbox{\hyperlink{class_c_g_patient_af491f55054cfd0288fb2b052dd434c33}{C\+G\+Patient}}, \mbox{\hyperlink{class_c_g_disease_ab0399cfd8accefe5f049d66efb9539e4}{C\+G\+Disease}}, \mbox{\hyperlink{class_c_g_doctor_a601c4bccc44e7a44540079e873c5ea8f}{C\+G\+Doctor}} i \mbox{\hyperlink{class_c_g_medicament_a08f2afb7a94b989f81971384ce84c805}{C\+G\+Medicament}}.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_c_g_object_a8cfd8e7d917cd445ea8f5284f709452d}\label{class_c_g_object_a8cfd8e7d917cd445ea8f5284f709452d}} 
+\index{C\+G\+Object@{C\+G\+Object}!map@{map}}
+\index{map@{map}!C\+G\+Object@{C\+G\+Object}}
+\subsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_map}{C\+Map}}$\ast$ C\+G\+Object\+::map\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Mapa na której znajduje się obiekt graficzny. 
+
+\mbox{\Hypertarget{class_c_g_object_a8955574357e33ce28957c4ff42154cfb}\label{class_c_g_object_a8955574357e33ce28957c4ff42154cfb}} 
+\index{C\+G\+Object@{C\+G\+Object}!object@{object}}
+\index{object@{object}!C\+G\+Object@{C\+G\+Object}}
+\subsubsection{\texorpdfstring{object}{object}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_object}{C\+Object}}$\ast$ C\+G\+Object\+::object\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Obiekt na który wskazuje obiekt graficzny. 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_g_object_8h}{C\+G\+Object.\+h}}\item 
+\mbox{\hyperlink{_c_g_object_8cpp}{C\+G\+Object.\+cpp}}\end{DoxyCompactItemize}

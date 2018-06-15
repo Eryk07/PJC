@@ -1,0 +1,156 @@
+\hypertarget{class_c_doctor}{}\section{Dokumentacja klasy C\+Doctor}
+\label{class_c_doctor}\index{C\+Doctor@{C\+Doctor}}
+
+
+Definicja klasy \mbox{\hyperlink{class_c_doctor}{C\+Doctor}}.  
+
+
+
+
+{\ttfamily \#include $<$C\+Doctor.\+h$>$}
+
+Diagram dziedziczenia dla C\+Doctor\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_doctor}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_doctor_ae175370d7f98eb6281d65029b9a9321f}{C\+Doctor}} (\mbox{\hyperlink{class_c_map}{C\+Map}} $\ast$m)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \mbox{\hyperlink{class_c_doctor}{C\+Doctor}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_doctor_a028188391f952493500ed191b40cee20}{$\sim$\+C\+Doctor}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy \mbox{\hyperlink{class_c_doctor}{C\+Doctor}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_doctor_a9fa8e8e952def12024b70231785d07be}{move}} ()
+\begin{DoxyCompactList}\small\item\em Ruch lekarza -\/ szukanie lekarstw a potem pacjentów. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_doctor_a9ae22158d776a4c489158b9b944fbe80}{update}} ()
+\begin{DoxyCompactList}\small\item\em Aktualizacja stanu lekarza -\/ zebranie leków, wizyt u pacjenta, zmiana ruchu Sprawdzenie obiektów z mapy, jeśli pacjent\+: najdzie na chorobę to się zaraża, spotka lekarza to zostaje wyleczony, spotka innego pacjenta lub najdzie na lek to ucieka, jeśli wyjdzie za granicę mapy to ucieka, jeśli nic nie ma w otoczeniu to znowu robi losowy ruch. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_doctor_a4f1c052261657a38df79427f6d448d1b}{collect}} (\mbox{\hyperlink{class_c_medicament}{C\+Medicament}} $\ast$medicament)
+\begin{DoxyCompactList}\small\item\em Zebranie lekarstwa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_doctor_a0f9f393a967e7294e31779cbb8f0f401}{cure}} (\mbox{\hyperlink{class_c_human}{C\+Human}} $\ast$man)
+\begin{DoxyCompactList}\small\item\em Uleczenie człowieka. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_c_medicament}{C\+Medicament}} $\ast$ $>$ \mbox{\hyperlink{class_c_doctor_a30c4633b76b836ee395bf707a77fcb37}{medicaments}}
+\begin{DoxyCompactList}\small\item\em Wektor leków zebranych przez lekarza. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Definicja klasy \mbox{\hyperlink{class_c_doctor}{C\+Doctor}}. 
+
+Klasa odpowiada za zachowanie obiektów klasy \mbox{\hyperlink{class_c_doctor}{C\+Doctor}}, która jest pochodną klasy \mbox{\hyperlink{class_c_human}{C\+Human}} na planszy. \begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_human}{C\+Human}} Klasa definiuje parametry i zachowanie doktora na mapie. 
+\end{DoxySeeAlso}
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_doctor_ae175370d7f98eb6281d65029b9a9321f}\label{class_c_doctor_ae175370d7f98eb6281d65029b9a9321f}} 
+\index{C\+Doctor@{C\+Doctor}!C\+Doctor@{C\+Doctor}}
+\index{C\+Doctor@{C\+Doctor}!C\+Doctor@{C\+Doctor}}
+\subsubsection{\texorpdfstring{C\+Doctor()}{CDoctor()}}
+{\footnotesize\ttfamily C\+Doctor\+::\+C\+Doctor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_map}{C\+Map}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \mbox{\hyperlink{class_c_doctor}{C\+Doctor}}. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em $\ast$m} & mapa na której znajduje się obiekt klasy \mbox{\hyperlink{class_c_doctor}{C\+Doctor}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+obiekt klasy \mbox{\hyperlink{class_c_doctor}{C\+Doctor}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_doctor_a028188391f952493500ed191b40cee20}\label{class_c_doctor_a028188391f952493500ed191b40cee20}} 
+\index{C\+Doctor@{C\+Doctor}!````~C\+Doctor@{$\sim$\+C\+Doctor}}
+\index{````~C\+Doctor@{$\sim$\+C\+Doctor}!C\+Doctor@{C\+Doctor}}
+\subsubsection{\texorpdfstring{$\sim$\+C\+Doctor()}{~CDoctor()}}
+{\footnotesize\ttfamily C\+Doctor\+::$\sim$\+C\+Doctor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destruktor klasy \mbox{\hyperlink{class_c_doctor}{C\+Doctor}}. 
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_doctor_a4f1c052261657a38df79427f6d448d1b}\label{class_c_doctor_a4f1c052261657a38df79427f6d448d1b}} 
+\index{C\+Doctor@{C\+Doctor}!collect@{collect}}
+\index{collect@{collect}!C\+Doctor@{C\+Doctor}}
+\subsubsection{\texorpdfstring{collect()}{collect()}}
+{\footnotesize\ttfamily void C\+Doctor\+::collect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_medicament}{C\+Medicament}} $\ast$}]{medicament }\end{DoxyParamCaption})}
+
+
+
+Zebranie lekarstwa. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em $\ast$medicament} & wskaźnik na lek który zostaje zebrany \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_doctor_a0f9f393a967e7294e31779cbb8f0f401}\label{class_c_doctor_a0f9f393a967e7294e31779cbb8f0f401}} 
+\index{C\+Doctor@{C\+Doctor}!cure@{cure}}
+\index{cure@{cure}!C\+Doctor@{C\+Doctor}}
+\subsubsection{\texorpdfstring{cure()}{cure()}}
+{\footnotesize\ttfamily void C\+Doctor\+::cure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_human}{C\+Human}} $\ast$}]{man }\end{DoxyParamCaption})}
+
+
+
+Uleczenie człowieka. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em $\ast$man} & wskaźnik na człowieka, który zostaje uleczony \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_doctor_a9fa8e8e952def12024b70231785d07be}\label{class_c_doctor_a9fa8e8e952def12024b70231785d07be}} 
+\index{C\+Doctor@{C\+Doctor}!move@{move}}
+\index{move@{move}!C\+Doctor@{C\+Doctor}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void C\+Doctor\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Ruch lekarza -\/ szukanie lekarstw a potem pacjentów. 
+
+
+
+Implementuje \mbox{\hyperlink{class_c_human_af0a61dfcb43e2d094ab66b29735c4424}{C\+Human}}.
+
+\mbox{\Hypertarget{class_c_doctor_a9ae22158d776a4c489158b9b944fbe80}\label{class_c_doctor_a9ae22158d776a4c489158b9b944fbe80}} 
+\index{C\+Doctor@{C\+Doctor}!update@{update}}
+\index{update@{update}!C\+Doctor@{C\+Doctor}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void C\+Doctor\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Aktualizacja stanu lekarza -\/ zebranie leków, wizyt u pacjenta, zmiana ruchu Sprawdzenie obiektów z mapy, jeśli pacjent\+: najdzie na chorobę to się zaraża, spotka lekarza to zostaje wyleczony, spotka innego pacjenta lub najdzie na lek to ucieka, jeśli wyjdzie za granicę mapy to ucieka, jeśli nic nie ma w otoczeniu to znowu robi losowy ruch. 
+
+
+
+Implementuje \mbox{\hyperlink{class_c_human_adb7f7d855ace82f7517bb49f465ea5d9}{C\+Human}}.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_c_doctor_a30c4633b76b836ee395bf707a77fcb37}\label{class_c_doctor_a30c4633b76b836ee395bf707a77fcb37}} 
+\index{C\+Doctor@{C\+Doctor}!medicaments@{medicaments}}
+\index{medicaments@{medicaments}!C\+Doctor@{C\+Doctor}}
+\subsubsection{\texorpdfstring{medicaments}{medicaments}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_c_medicament}{C\+Medicament}}$\ast$$>$ C\+Doctor\+::medicaments\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Wektor leków zebranych przez lekarza. 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_doctor_8h}{C\+Doctor.\+h}}\item 
+\mbox{\hyperlink{_c_doctor_8cpp}{C\+Doctor.\+cpp}}\end{DoxyCompactItemize}

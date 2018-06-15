@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2018-05-18T12:42:18
+# Project created by QtCreator 2018-05-01T09:19:08
 #
 #-------------------------------------------------
 
@@ -22,34 +22,42 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-
 SOURCES += \
+        main.cpp \
     CDisease.cpp \
     CDoctor.cpp \
-    CHumans.cpp \
-    CInfectiousDis.cpp \
-    CMapa.cpp \
+    CGDisease.cpp \
+    CGDoctor.cpp \
+    CGMedicament.cpp \
+    CGObject.cpp \
+    CGPatient.cpp \
+    CHuman.cpp \
+    CMap.cpp \
     CMedicament.cpp \
-    CNonInfectiousDis.cpp \
-    CObjects.cpp \
+    CNonMoving.cpp \
+    CObject.cpp \
     CPatient.cpp \
-    CProgram.cpp \
-    main.cpp \
-    mainwindow.cpp
+    CProgram.cpp
 
 HEADERS += \
     CDisease.h \
     CDoctor.h \
-    CHumans.h \
-    CInfectiousDis.h \
-    CMapa.h \
+    CGDisease.h \
+    CGDoctor.h \
+    CGMedicament.h \
+    CGObject.h \
+    CGPatient.h \
+    CHuman.h \
+    CMap.h \
     CMedicament.h \
-    CNonInfectiousDis.h \
-    CObjects.h \
+    CNonMoving.h \
+    CObject.h \
     CPatient.h \
-    CProgram.h \
-    Displaying.h \
-    mainwindow.h
+    CProgram.h
 
-FORMS += \
-        mainwindow.ui
+FORMS +=
+
+DISTFILES +=
+
+RESOURCES += \
+    medicament.qrc

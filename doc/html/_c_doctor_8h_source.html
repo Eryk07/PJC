@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Liszaj: Plik źródłowy CDoctor.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="medicament.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Liszaj
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">CDoctor.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_c_doctor_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CDOCTOR_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CDOCTOR_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_c_human_8h.html">CHuman.h</a>&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_c_medicament_8h.html">CMedicament.h</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_c_patient_8h.html">CPatient.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//class CPatient{};</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_c_doctor.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_doctor.html">CDoctor</a> :<span class="keyword">public</span> <a class="code" href="class_c_human.html">CHuman</a></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_c_doctor.html#a30c4633b76b836ee395bf707a77fcb37">   19</a></span>&#160;    std::vector&lt;CMedicament*&gt; <a class="code" href="class_c_doctor.html#a30c4633b76b836ee395bf707a77fcb37">medicaments</a>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_c_doctor.html#ae175370d7f98eb6281d65029b9a9321f">CDoctor</a>(<a class="code" href="class_c_map.html">CMap</a> *m);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_c_doctor.html#a028188391f952493500ed191b40cee20">~CDoctor</a>();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_doctor.html#a9fa8e8e952def12024b70231785d07be">move</a>();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_doctor.html#a9ae22158d776a4c489158b9b944fbe80">update</a>();</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_doctor.html#a4f1c052261657a38df79427f6d448d1b">collect</a>(<a class="code" href="class_c_medicament.html">CMedicament</a> *medicament);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_doctor.html#a0f9f393a967e7294e31779cbb8f0f401">cure</a>(<a class="code" href="class_c_human.html">CHuman</a> *man );</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif // CDOCTOR_H</span></div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="ttc" id="_c_human_8h_html"><div class="ttname"><a href="_c_human_8h.html">CHuman.h</a></div></div>
+<div class="ttc" id="class_c_doctor_html"><div class="ttname"><a href="class_c_doctor.html">CDoctor</a></div><div class="ttdoc">Definicja klasy CDoctor. </div><div class="ttdef"><b>Definition:</b> CDoctor.h:15</div></div>
+<div class="ttc" id="class_c_doctor_html_ae175370d7f98eb6281d65029b9a9321f"><div class="ttname"><a href="class_c_doctor.html#ae175370d7f98eb6281d65029b9a9321f">CDoctor::CDoctor</a></div><div class="ttdeci">CDoctor(CMap *m)</div><div class="ttdoc">Konstruktor klasy CDoctor. </div><div class="ttdef"><b>Definition:</b> CDoctor.cpp:4</div></div>
+<div class="ttc" id="class_c_doctor_html_a9ae22158d776a4c489158b9b944fbe80"><div class="ttname"><a href="class_c_doctor.html#a9ae22158d776a4c489158b9b944fbe80">CDoctor::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">Aktualizacja stanu lekarza - zebranie leków, wizyt u pacjenta, zmiana ruchu Sprawdzenie obiektów z ma...</div><div class="ttdef"><b>Definition:</b> CDoctor.cpp:78</div></div>
+<div class="ttc" id="class_c_human_html"><div class="ttname"><a href="class_c_human.html">CHuman</a></div><div class="ttdoc">Definicja klasy CHuman. </div><div class="ttdef"><b>Definition:</b> CHuman.h:17</div></div>
+<div class="ttc" id="_c_patient_8h_html"><div class="ttname"><a href="_c_patient_8h.html">CPatient.h</a></div></div>
+<div class="ttc" id="class_c_doctor_html_a9fa8e8e952def12024b70231785d07be"><div class="ttname"><a href="class_c_doctor.html#a9fa8e8e952def12024b70231785d07be">CDoctor::move</a></div><div class="ttdeci">void move()</div><div class="ttdoc">Ruch lekarza - szukanie lekarstw a potem pacjentów. </div><div class="ttdef"><b>Definition:</b> CDoctor.cpp:18</div></div>
+<div class="ttc" id="class_c_doctor_html_a4f1c052261657a38df79427f6d448d1b"><div class="ttname"><a href="class_c_doctor.html#a4f1c052261657a38df79427f6d448d1b">CDoctor::collect</a></div><div class="ttdeci">void collect(CMedicament *medicament)</div><div class="ttdoc">Zebranie lekarstwa. </div><div class="ttdef"><b>Definition:</b> CDoctor.cpp:150</div></div>
+<div class="ttc" id="class_c_doctor_html_a0f9f393a967e7294e31779cbb8f0f401"><div class="ttname"><a href="class_c_doctor.html#a0f9f393a967e7294e31779cbb8f0f401">CDoctor::cure</a></div><div class="ttdeci">void cure(CHuman *man)</div><div class="ttdoc">Uleczenie człowieka. </div><div class="ttdef"><b>Definition:</b> CDoctor.cpp:156</div></div>
+<div class="ttc" id="class_c_map_html"><div class="ttname"><a href="class_c_map.html">CMap</a></div><div class="ttdoc">Definicja klasy CMap. </div><div class="ttdef"><b>Definition:</b> CMap.h:16</div></div>
+<div class="ttc" id="_c_medicament_8h_html"><div class="ttname"><a href="_c_medicament_8h.html">CMedicament.h</a></div></div>
+<div class="ttc" id="class_c_doctor_html_a30c4633b76b836ee395bf707a77fcb37"><div class="ttname"><a href="class_c_doctor.html#a30c4633b76b836ee395bf707a77fcb37">CDoctor::medicaments</a></div><div class="ttdeci">std::vector&lt; CMedicament * &gt; medicaments</div><div class="ttdoc">Wektor leków zebranych przez lekarza. </div><div class="ttdef"><b>Definition:</b> CDoctor.h:19</div></div>
+<div class="ttc" id="class_c_medicament_html"><div class="ttname"><a href="class_c_medicament.html">CMedicament</a></div><div class="ttdoc">Definicja klasy CMedicament. </div><div class="ttdef"><b>Definition:</b> CMedicament.h:12</div></div>
+<div class="ttc" id="class_c_doctor_html_a028188391f952493500ed191b40cee20"><div class="ttname"><a href="class_c_doctor.html#a028188391f952493500ed191b40cee20">CDoctor::~CDoctor</a></div><div class="ttdeci">~CDoctor()</div><div class="ttdoc">Destruktor klasy CDoctor. </div><div class="ttdef"><b>Definition:</b> CDoctor.cpp:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

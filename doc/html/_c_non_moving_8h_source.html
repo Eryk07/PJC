@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Liszaj: Plik źródłowy CNonMoving.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="medicament.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Liszaj
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">CNonMoving.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_c_non_moving_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CNONMOVING_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CNONMOVING_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_c_object_8h.html">CObject.h</a>&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_c_non_moving.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_non_moving.html">CNonMoving</a> :<span class="keyword">public</span> <a class="code" href="class_c_object.html">CObject</a></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_c_non_moving.html#a822c4674c5e6d53b11bf135f5d2d42bd">   14</a></span>&#160;    qreal <a class="code" href="class_c_non_moving.html#a822c4674c5e6d53b11bf135f5d2d42bd">value</a>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_c_non_moving.html#a4f1dd301f116c087e277f431480bd088">CNonMoving</a>(qreal xv, qreal yv, qreal anglev, qreal rangev, qreal healthv, qreal valuev, <a class="code" href="class_c_map.html">CMap</a> *m);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    qreal <a class="code" href="class_c_non_moving.html#aef911361972d6ace43afb87426ab8f2e">get_value</a>();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_non_moving.html#ad17a839c59eb2639623e863a3d6c8740">update</a>()=0;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif // CNONMOVING_H</span></div><div class="ttc" id="_c_object_8h_html"><div class="ttname"><a href="_c_object_8h.html">CObject.h</a></div></div>
+<div class="ttc" id="class_c_non_moving_html_aef911361972d6ace43afb87426ab8f2e"><div class="ttname"><a href="class_c_non_moving.html#aef911361972d6ace43afb87426ab8f2e">CNonMoving::get_value</a></div><div class="ttdeci">qreal get_value()</div><div class="ttdoc">Zwracanie prywatnej wartości value. </div><div class="ttdef"><b>Definition:</b> CNonMoving.cpp:9</div></div>
+<div class="ttc" id="class_c_non_moving_html"><div class="ttname"><a href="class_c_non_moving.html">CNonMoving</a></div><div class="ttdoc">Definicja klasy CNonMoving. </div><div class="ttdef"><b>Definition:</b> CNonMoving.h:10</div></div>
+<div class="ttc" id="class_c_non_moving_html_a822c4674c5e6d53b11bf135f5d2d42bd"><div class="ttname"><a href="class_c_non_moving.html#a822c4674c5e6d53b11bf135f5d2d42bd">CNonMoving::value</a></div><div class="ttdeci">qreal value</div><div class="ttdoc">Wartość wyświetlana przez obiekt. </div><div class="ttdef"><b>Definition:</b> CNonMoving.h:14</div></div>
+<div class="ttc" id="class_c_map_html"><div class="ttname"><a href="class_c_map.html">CMap</a></div><div class="ttdoc">Definicja klasy CMap. </div><div class="ttdef"><b>Definition:</b> CMap.h:16</div></div>
+<div class="ttc" id="class_c_non_moving_html_a4f1dd301f116c087e277f431480bd088"><div class="ttname"><a href="class_c_non_moving.html#a4f1dd301f116c087e277f431480bd088">CNonMoving::CNonMoving</a></div><div class="ttdeci">CNonMoving(qreal xv, qreal yv, qreal anglev, qreal rangev, qreal healthv, qreal valuev, CMap *m)</div><div class="ttdoc">Konstruktor klasy CNonMoving. </div><div class="ttdef"><b>Definition:</b> CNonMoving.cpp:3</div></div>
+<div class="ttc" id="class_c_non_moving_html_ad17a839c59eb2639623e863a3d6c8740"><div class="ttname"><a href="class_c_non_moving.html#ad17a839c59eb2639623e863a3d6c8740">CNonMoving::update</a></div><div class="ttdeci">virtual void update()=0</div><div class="ttdoc">Uaktualnienie pozycji, stanu obiektu CNonMoving Funkcja wirtualna dziedziczona do klas pochodnych...</div></div>
+<div class="ttc" id="class_c_object_html"><div class="ttname"><a href="class_c_object.html">CObject</a></div><div class="ttdoc">Definicja klasy CObject. </div><div class="ttdef"><b>Definition:</b> CObject.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['update',['update',['../class_c_disease.html#a2f8e7ad1e743ace0540a09a6f620d6d7',1,'CDisease::update()'],['../class_c_doctor.html#a9ae22158d776a4c489158b9b944fbe80',1,'CDoctor::update()'],['../class_c_human.html#adb7f7d855ace82f7517bb49f465ea5d9',1,'CHuman::update()'],['../class_c_medicament.html#a3568bc88e5fa9db63e82fcad13ce90eb',1,'CMedicament::update()'],['../class_c_non_moving.html#ad17a839c59eb2639623e863a3d6c8740',1,'CNonMoving::update()'],['../class_c_object.html#acb42ca516e836d0267ddb9a0556916a9',1,'CObject::update()'],['../class_c_patient.html#a40dd4c549f4b40928b95dd4d8f2ad311',1,'CPatient::update()']]],
+  ['updateg',['updateG',['../class_c_g_disease.html#ab0399cfd8accefe5f049d66efb9539e4',1,'CGDisease::updateG()'],['../class_c_g_doctor.html#a601c4bccc44e7a44540079e873c5ea8f',1,'CGDoctor::updateG()'],['../class_c_g_medicament.html#a08f2afb7a94b989f81971384ce84c805',1,'CGMedicament::updateG()'],['../class_c_g_object.html#a95e80549666e955edd57ab042c2e8ef5',1,'CGObject::updateG()'],['../class_c_g_patient.html#af491f55054cfd0288fb2b052dd434c33',1,'CGPatient::updateG()']]]
+];

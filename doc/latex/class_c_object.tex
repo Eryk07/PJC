@@ -1,0 +1,259 @@
+\hypertarget{class_c_object}{}\section{Dokumentacja klasy C\+Object}
+\label{class_c_object}\index{C\+Object@{C\+Object}}
+
+
+Definicja klasy \mbox{\hyperlink{class_c_object}{C\+Object}}.  
+
+
+
+
+{\ttfamily \#include $<$C\+Object.\+h$>$}
+
+Diagram dziedziczenia dla C\+Object\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_object}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_object_a97dbcf53f475041511e92c102bd18c87}{C\+Object}} (qreal xv, qreal yv, qreal anglev, qreal rangev, qreal healthv, \mbox{\hyperlink{class_c_map}{C\+Map}} $\ast$m)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \mbox{\hyperlink{class_c_object}{C\+Object}}. \end{DoxyCompactList}\item 
+qreal \mbox{\hyperlink{class_c_object_aeb2157f241db131ecc1279eeb25f5790}{get\+\_\+x}} ()
+\begin{DoxyCompactList}\small\item\em Zwracanie chronionej wartości x. \end{DoxyCompactList}\item 
+qreal \mbox{\hyperlink{class_c_object_a0d35a19c161a897458a6077cbe756d7f}{get\+\_\+y}} ()
+\begin{DoxyCompactList}\small\item\em Zwracanie chronionej wartości y. \end{DoxyCompactList}\item 
+qreal \mbox{\hyperlink{class_c_object_acbd70cc733501b2a631e825aa4e8921f}{get\+\_\+angle}} ()
+\begin{DoxyCompactList}\small\item\em Zwracanie chronionej wartości angle. \end{DoxyCompactList}\item 
+qreal \mbox{\hyperlink{class_c_object_ae4d6cb4753f3ca0782158890160b7e18}{get\+\_\+range}} ()
+\begin{DoxyCompactList}\small\item\em Zwracanie chronionej wartości range. \end{DoxyCompactList}\item 
+qreal \mbox{\hyperlink{class_c_object_a1aa6f6ef73f37b17c0a7b94b78228192}{get\+\_\+health}} ()
+\begin{DoxyCompactList}\small\item\em Zwracanie chronionej wartości health. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_map}{C\+Map}} $\ast$ \mbox{\hyperlink{class_c_object_ae357ff56797d1561a7c16c250b686747}{get\+\_\+map}} ()
+\begin{DoxyCompactList}\small\item\em Zwracanie chronionej wartości map. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_object_acb42ca516e836d0267ddb9a0556916a9}{update}} ()=0
+\begin{DoxyCompactList}\small\item\em Uaktualnienie pozycji, stanu obiektu \mbox{\hyperlink{class_c_object}{C\+Object}} Funkcja wirtualna dziedziczona do klas pochodnych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+qreal \mbox{\hyperlink{class_c_object_acb23178c7b65e6cf37f9ab95128cd8d2}{x}}
+\begin{DoxyCompactList}\small\item\em Połozenie obiektu w osi x. \end{DoxyCompactList}\item 
+qreal \mbox{\hyperlink{class_c_object_a22fd03bdf2bc5c7058e4c2a9c9237c64}{y}}
+\begin{DoxyCompactList}\small\item\em Połozenie obiektu w osi y. \end{DoxyCompactList}\item 
+qreal \mbox{\hyperlink{class_c_object_a9ac381be23878447d48800b16d773efa}{angle}}
+\begin{DoxyCompactList}\small\item\em Kąt obrócenia obiektu. \end{DoxyCompactList}\item 
+qreal \mbox{\hyperlink{class_c_object_a0d3f8546df4d7620602646e7661d905e}{range}}
+\begin{DoxyCompactList}\small\item\em Zakres obiektu. \end{DoxyCompactList}\item 
+qreal \mbox{\hyperlink{class_c_object_acfa8d5b33a7b561978899ba1b0d78361}{health}}
+\begin{DoxyCompactList}\small\item\em Zdrowie obiektu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_map}{C\+Map}} $\ast$ \mbox{\hyperlink{class_c_object_a958cfe5f141fdab246af5da849f98d07}{map}}
+\begin{DoxyCompactList}\small\item\em Mapa obiektu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Definicja klasy \mbox{\hyperlink{class_c_object}{C\+Object}}. 
+
+Klasa odpowiada za zachowanie obiektów klasy \mbox{\hyperlink{class_c_object}{C\+Object}}, która jest matką innych klas logicznych programu. \begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_object}{C\+Object}} Klasa definiuje parametry obiektu. 
+\end{DoxySeeAlso}
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_object_a97dbcf53f475041511e92c102bd18c87}\label{class_c_object_a97dbcf53f475041511e92c102bd18c87}} 
+\index{C\+Object@{C\+Object}!C\+Object@{C\+Object}}
+\index{C\+Object@{C\+Object}!C\+Object@{C\+Object}}
+\subsubsection{\texorpdfstring{C\+Object()}{CObject()}}
+{\footnotesize\ttfamily C\+Object\+::\+C\+Object (\begin{DoxyParamCaption}\item[{qreal}]{xv,  }\item[{qreal}]{yv,  }\item[{qreal}]{anglev,  }\item[{qreal}]{rangev,  }\item[{qreal}]{healthv,  }\item[{\mbox{\hyperlink{class_c_map}{C\+Map}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \mbox{\hyperlink{class_c_object}{C\+Object}}. 
+
+Konstruktor klasy \mbox{\hyperlink{class_c_object}{C\+Object}}, dziedziczony do klas pochodnych\+: \begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_non_moving}{C\+Non\+Moving}} 
+
+\mbox{\hyperlink{class_c_human}{C\+Human}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parametry}
+{\em xv} & początkowa pozycja obiektu w osi x \\
+\hline
+{\em yv} & początkowa pozycja obiektu w osi y \\
+\hline
+{\em anglev} & początkowy kąt obrócenia obiektu \\
+\hline
+{\em rangev} & zakres obiektu \\
+\hline
+{\em healthv} & zdrowie obiektu \\
+\hline
+{\em $\ast$m} & mapa na której znajduje się obiekt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+obiekt klasy \mbox{\hyperlink{class_c_object}{C\+Object}} 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_object_acbd70cc733501b2a631e825aa4e8921f}\label{class_c_object_acbd70cc733501b2a631e825aa4e8921f}} 
+\index{C\+Object@{C\+Object}!get\+\_\+angle@{get\+\_\+angle}}
+\index{get\+\_\+angle@{get\+\_\+angle}!C\+Object@{C\+Object}}
+\subsubsection{\texorpdfstring{get\+\_\+angle()}{get\_angle()}}
+{\footnotesize\ttfamily qreal C\+Object\+::get\+\_\+angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwracanie chronionej wartości angle. 
+
+\begin{DoxyReturn}{Zwraca}
+angle 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_object_a1aa6f6ef73f37b17c0a7b94b78228192}\label{class_c_object_a1aa6f6ef73f37b17c0a7b94b78228192}} 
+\index{C\+Object@{C\+Object}!get\+\_\+health@{get\+\_\+health}}
+\index{get\+\_\+health@{get\+\_\+health}!C\+Object@{C\+Object}}
+\subsubsection{\texorpdfstring{get\+\_\+health()}{get\_health()}}
+{\footnotesize\ttfamily qreal C\+Object\+::get\+\_\+health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwracanie chronionej wartości health. 
+
+\begin{DoxyReturn}{Zwraca}
+health 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_object_ae357ff56797d1561a7c16c250b686747}\label{class_c_object_ae357ff56797d1561a7c16c250b686747}} 
+\index{C\+Object@{C\+Object}!get\+\_\+map@{get\+\_\+map}}
+\index{get\+\_\+map@{get\+\_\+map}!C\+Object@{C\+Object}}
+\subsubsection{\texorpdfstring{get\+\_\+map()}{get\_map()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_map}{C\+Map}} $\ast$ C\+Object\+::get\+\_\+map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwracanie chronionej wartości map. 
+
+\begin{DoxyReturn}{Zwraca}
+map 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_object_ae4d6cb4753f3ca0782158890160b7e18}\label{class_c_object_ae4d6cb4753f3ca0782158890160b7e18}} 
+\index{C\+Object@{C\+Object}!get\+\_\+range@{get\+\_\+range}}
+\index{get\+\_\+range@{get\+\_\+range}!C\+Object@{C\+Object}}
+\subsubsection{\texorpdfstring{get\+\_\+range()}{get\_range()}}
+{\footnotesize\ttfamily qreal C\+Object\+::get\+\_\+range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwracanie chronionej wartości range. 
+
+\begin{DoxyReturn}{Zwraca}
+range 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_object_aeb2157f241db131ecc1279eeb25f5790}\label{class_c_object_aeb2157f241db131ecc1279eeb25f5790}} 
+\index{C\+Object@{C\+Object}!get\+\_\+x@{get\+\_\+x}}
+\index{get\+\_\+x@{get\+\_\+x}!C\+Object@{C\+Object}}
+\subsubsection{\texorpdfstring{get\+\_\+x()}{get\_x()}}
+{\footnotesize\ttfamily qreal C\+Object\+::get\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwracanie chronionej wartości x. 
+
+\begin{DoxyReturn}{Zwraca}
+x 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_object_a0d35a19c161a897458a6077cbe756d7f}\label{class_c_object_a0d35a19c161a897458a6077cbe756d7f}} 
+\index{C\+Object@{C\+Object}!get\+\_\+y@{get\+\_\+y}}
+\index{get\+\_\+y@{get\+\_\+y}!C\+Object@{C\+Object}}
+\subsubsection{\texorpdfstring{get\+\_\+y()}{get\_y()}}
+{\footnotesize\ttfamily qreal C\+Object\+::get\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwracanie chronionej wartości y. 
+
+\begin{DoxyReturn}{Zwraca}
+y 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_object_acb42ca516e836d0267ddb9a0556916a9}\label{class_c_object_acb42ca516e836d0267ddb9a0556916a9}} 
+\index{C\+Object@{C\+Object}!update@{update}}
+\index{update@{update}!C\+Object@{C\+Object}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void C\+Object\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Uaktualnienie pozycji, stanu obiektu \mbox{\hyperlink{class_c_object}{C\+Object}} Funkcja wirtualna dziedziczona do klas pochodnych. 
+
+
+
+Implementowany w \mbox{\hyperlink{class_c_doctor_a9ae22158d776a4c489158b9b944fbe80}{C\+Doctor}}, \mbox{\hyperlink{class_c_non_moving_ad17a839c59eb2639623e863a3d6c8740}{C\+Non\+Moving}}, \mbox{\hyperlink{class_c_human_adb7f7d855ace82f7517bb49f465ea5d9}{C\+Human}}, \mbox{\hyperlink{class_c_patient_a40dd4c549f4b40928b95dd4d8f2ad311}{C\+Patient}}, \mbox{\hyperlink{class_c_disease_a2f8e7ad1e743ace0540a09a6f620d6d7}{C\+Disease}} i \mbox{\hyperlink{class_c_medicament_a3568bc88e5fa9db63e82fcad13ce90eb}{C\+Medicament}}.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_c_object_a9ac381be23878447d48800b16d773efa}\label{class_c_object_a9ac381be23878447d48800b16d773efa}} 
+\index{C\+Object@{C\+Object}!angle@{angle}}
+\index{angle@{angle}!C\+Object@{C\+Object}}
+\subsubsection{\texorpdfstring{angle}{angle}}
+{\footnotesize\ttfamily qreal C\+Object\+::angle\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Kąt obrócenia obiektu. 
+
+\mbox{\Hypertarget{class_c_object_acfa8d5b33a7b561978899ba1b0d78361}\label{class_c_object_acfa8d5b33a7b561978899ba1b0d78361}} 
+\index{C\+Object@{C\+Object}!health@{health}}
+\index{health@{health}!C\+Object@{C\+Object}}
+\subsubsection{\texorpdfstring{health}{health}}
+{\footnotesize\ttfamily qreal C\+Object\+::health\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Zdrowie obiektu. 
+
+\mbox{\Hypertarget{class_c_object_a958cfe5f141fdab246af5da849f98d07}\label{class_c_object_a958cfe5f141fdab246af5da849f98d07}} 
+\index{C\+Object@{C\+Object}!map@{map}}
+\index{map@{map}!C\+Object@{C\+Object}}
+\subsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_map}{C\+Map}}$\ast$ C\+Object\+::map\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Mapa obiektu. 
+
+\mbox{\Hypertarget{class_c_object_a0d3f8546df4d7620602646e7661d905e}\label{class_c_object_a0d3f8546df4d7620602646e7661d905e}} 
+\index{C\+Object@{C\+Object}!range@{range}}
+\index{range@{range}!C\+Object@{C\+Object}}
+\subsubsection{\texorpdfstring{range}{range}}
+{\footnotesize\ttfamily qreal C\+Object\+::range\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Zakres obiektu. 
+
+\mbox{\Hypertarget{class_c_object_acb23178c7b65e6cf37f9ab95128cd8d2}\label{class_c_object_acb23178c7b65e6cf37f9ab95128cd8d2}} 
+\index{C\+Object@{C\+Object}!x@{x}}
+\index{x@{x}!C\+Object@{C\+Object}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily qreal C\+Object\+::x\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Połozenie obiektu w osi x. 
+
+\mbox{\Hypertarget{class_c_object_a22fd03bdf2bc5c7058e4c2a9c9237c64}\label{class_c_object_a22fd03bdf2bc5c7058e4c2a9c9237c64}} 
+\index{C\+Object@{C\+Object}!y@{y}}
+\index{y@{y}!C\+Object@{C\+Object}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily qreal C\+Object\+::y\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Połozenie obiektu w osi y. 
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_object_8h}{C\+Object.\+h}}\item 
+\mbox{\hyperlink{_c_object_8cpp}{C\+Object.\+cpp}}\end{DoxyCompactItemize}

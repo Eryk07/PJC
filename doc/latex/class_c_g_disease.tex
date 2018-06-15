@@ -1,0 +1,139 @@
+\hypertarget{class_c_g_disease}{}\section{Dokumentacja klasy C\+G\+Disease}
+\label{class_c_g_disease}\index{C\+G\+Disease@{C\+G\+Disease}}
+
+
+Definicja klasy \mbox{\hyperlink{class_c_g_disease}{C\+G\+Disease}}.  
+
+
+
+
+{\ttfamily \#include $<$C\+G\+Disease.\+h$>$}
+
+Diagram dziedziczenia dla C\+G\+Disease\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_g_disease}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_g_disease_a68ecb36418f7c30caf62da33dfec4470}{C\+G\+Disease}} (\mbox{\hyperlink{class_c_object}{C\+Object}} $\ast$o)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \mbox{\hyperlink{class_c_g_disease}{C\+G\+Disease}}. \end{DoxyCompactList}\item 
+Q\+Painter\+Path \mbox{\hyperlink{class_c_g_disease_a9cba2dd518ac5625a3982f6f92b3fd3f}{shape}} () const override
+\begin{DoxyCompactList}\small\item\em Kształt obiektu graficzengo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_g_disease_a78fe4aba5b2efcbcd2a65555421bf359}{paint}} (Q\+Painter $\ast$painter, const Q\+Style\+Option\+Graphics\+Item $\ast$option, Q\+Widget $\ast$widget) override
+\begin{DoxyCompactList}\small\item\em Namaluj w oknie. \end{DoxyCompactList}\item 
+Q\+RectF \mbox{\hyperlink{class_c_g_disease_ab2652078d767e244b586577cbda52beb}{bounding\+Rect}} () const override
+\begin{DoxyCompactList}\small\item\em Prostokąt obiektu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_g_disease_ab0399cfd8accefe5f049d66efb9539e4}{updateG}} () override
+\begin{DoxyCompactList}\small\item\em Odśwież obiekt graficzny. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\subsection{Opis szczegółowy}
+Definicja klasy \mbox{\hyperlink{class_c_g_disease}{C\+G\+Disease}}. 
+
+Klasa odpowiada za wyświetlanie graficznych odpowiedników obiektów klasy logicznej \mbox{\hyperlink{class_c_disease}{C\+Disease}}.
+\begin{DoxyItemize}
+\item \begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_disease}{C\+Disease}} Klasa wyświetla chorobę zgodnie z parametrami logicznymi zebranymi w klasie \mbox{\hyperlink{class_c_disease}{C\+Disease}}. 
+\end{DoxySeeAlso}
+
+\end{DoxyItemize}
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_g_disease_a68ecb36418f7c30caf62da33dfec4470}\label{class_c_g_disease_a68ecb36418f7c30caf62da33dfec4470}} 
+\index{C\+G\+Disease@{C\+G\+Disease}!C\+G\+Disease@{C\+G\+Disease}}
+\index{C\+G\+Disease@{C\+G\+Disease}!C\+G\+Disease@{C\+G\+Disease}}
+\subsubsection{\texorpdfstring{C\+G\+Disease()}{CGDisease()}}
+{\footnotesize\ttfamily C\+G\+Disease\+::\+C\+G\+Disease (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_object}{C\+Object}} $\ast$}]{o }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \mbox{\hyperlink{class_c_g_disease}{C\+G\+Disease}}. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em $\ast$o} & wskaźnik na obiekt który graficznie przedstawia klasa \mbox{\hyperlink{class_c_g_disease}{C\+G\+Disease}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+obiekt klasy \mbox{\hyperlink{class_c_g_disease}{C\+G\+Disease}} 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_g_disease_ab2652078d767e244b586577cbda52beb}\label{class_c_g_disease_ab2652078d767e244b586577cbda52beb}} 
+\index{C\+G\+Disease@{C\+G\+Disease}!bounding\+Rect@{bounding\+Rect}}
+\index{bounding\+Rect@{bounding\+Rect}!C\+G\+Disease@{C\+G\+Disease}}
+\subsubsection{\texorpdfstring{bounding\+Rect()}{boundingRect()}}
+{\footnotesize\ttfamily Q\+RectF C\+G\+Disease\+::bounding\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Prostokąt obiektu. 
+
+Funkcja nadpisuje funkcję o tej samej nazwie z klasy matki \begin{DoxyReturn}{Zwraca}
+prostokąt typu Q\+RectF 
+\end{DoxyReturn}
+
+
+Implementuje \mbox{\hyperlink{class_c_g_object_ab9edf3d10a53c254cdb5d3d8de930207}{C\+G\+Object}}.
+
+\mbox{\Hypertarget{class_c_g_disease_a78fe4aba5b2efcbcd2a65555421bf359}\label{class_c_g_disease_a78fe4aba5b2efcbcd2a65555421bf359}} 
+\index{C\+G\+Disease@{C\+G\+Disease}!paint@{paint}}
+\index{paint@{paint}!C\+G\+Disease@{C\+G\+Disease}}
+\subsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void C\+G\+Disease\+::paint (\begin{DoxyParamCaption}\item[{Q\+Painter $\ast$}]{painter,  }\item[{const Q\+Style\+Option\+Graphics\+Item $\ast$}]{option,  }\item[{Q\+Widget $\ast$}]{widget }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Namaluj w oknie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em painter} & \char`\"{}pędzel\char`\"{} malowania obiektu w oknie \\
+\hline
+{\em option} & opcje widgetu \\
+\hline
+{\em widget} & wskaźnik na okno \\
+\hline
+\end{DoxyParams}
+
+
+Implementuje \mbox{\hyperlink{class_c_g_object_a9622c313eb09ca5fc0e34f5d2aaac910}{C\+G\+Object}}.
+
+\mbox{\Hypertarget{class_c_g_disease_a9cba2dd518ac5625a3982f6f92b3fd3f}\label{class_c_g_disease_a9cba2dd518ac5625a3982f6f92b3fd3f}} 
+\index{C\+G\+Disease@{C\+G\+Disease}!shape@{shape}}
+\index{shape@{shape}!C\+G\+Disease@{C\+G\+Disease}}
+\subsubsection{\texorpdfstring{shape()}{shape()}}
+{\footnotesize\ttfamily Q\+Painter\+Path C\+G\+Disease\+::shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Kształt obiektu graficzengo. 
+
+Funkcja nadpisuje funkcję o tej samej nazwie z klasy matki \begin{DoxyReturn}{Zwraca}
+ścieżka namalowanego obiektu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_g_disease_ab0399cfd8accefe5f049d66efb9539e4}\label{class_c_g_disease_ab0399cfd8accefe5f049d66efb9539e4}} 
+\index{C\+G\+Disease@{C\+G\+Disease}!updateG@{updateG}}
+\index{updateG@{updateG}!C\+G\+Disease@{C\+G\+Disease}}
+\subsubsection{\texorpdfstring{update\+G()}{updateG()}}
+{\footnotesize\ttfamily void C\+G\+Disease\+::updateG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Odśwież obiekt graficzny. 
+
+Funkcja nadpisuje funkcję o tej samej nazwie z klasy matki 
+
+Implementuje \mbox{\hyperlink{class_c_g_object_a95e80549666e955edd57ab042c2e8ef5}{C\+G\+Object}}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_g_disease_8h}{C\+G\+Disease.\+h}}\item 
+\mbox{\hyperlink{_c_g_disease_8cpp}{C\+G\+Disease.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/new/grafika">
+        <file>medicament.png</file>
+    </qresource>
+</RCC>

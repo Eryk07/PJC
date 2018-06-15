@@ -1,0 +1,139 @@
+\hypertarget{class_c_g_doctor}{}\section{Dokumentacja klasy C\+G\+Doctor}
+\label{class_c_g_doctor}\index{C\+G\+Doctor@{C\+G\+Doctor}}
+
+
+Definicja klasy \mbox{\hyperlink{class_c_g_doctor}{C\+G\+Doctor}}.  
+
+
+
+
+{\ttfamily \#include $<$C\+G\+Doctor.\+h$>$}
+
+Diagram dziedziczenia dla C\+G\+Doctor\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_g_doctor}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_g_doctor_afd2a771ff728d41580909a658af938c9}{C\+G\+Doctor}} (\mbox{\hyperlink{class_c_object}{C\+Object}} $\ast$o)
+\begin{DoxyCompactList}\small\item\em Konstruktor klasy \mbox{\hyperlink{class_c_g_doctor}{C\+G\+Doctor}}. \end{DoxyCompactList}\item 
+Q\+Painter\+Path \mbox{\hyperlink{class_c_g_doctor_abfb22c548f5d97fddef40b928b7d16bb}{shape}} () const override
+\begin{DoxyCompactList}\small\item\em Kształt obiektu graficzengo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_g_doctor_a1a4b50cd9ab7f5a94a47d97e58c9475d}{paint}} (Q\+Painter $\ast$painter, const Q\+Style\+Option\+Graphics\+Item $\ast$option, Q\+Widget $\ast$widget) override
+\begin{DoxyCompactList}\small\item\em Namaluj w oknie. \end{DoxyCompactList}\item 
+Q\+RectF \mbox{\hyperlink{class_c_g_doctor_a54058ba434d8d7d0c6bf16c1a9f6536a}{bounding\+Rect}} () const override
+\begin{DoxyCompactList}\small\item\em Prostokąt obiektu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_g_doctor_a601c4bccc44e7a44540079e873c5ea8f}{updateG}} () override
+\begin{DoxyCompactList}\small\item\em Odśwież obiekt graficzny. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Dodatkowe Dziedziczone Składowe}
+
+
+\subsection{Opis szczegółowy}
+Definicja klasy \mbox{\hyperlink{class_c_g_doctor}{C\+G\+Doctor}}. 
+
+Klasa odpowiada za wyświetlanie graficznych odpowiedników obiektów klasy logicznej \mbox{\hyperlink{class_c_doctor}{C\+Doctor}}
+\begin{DoxyItemize}
+\item \begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{class_c_doctor}{C\+Doctor}} Klasa wyświetla lekarza zgodnie z parametrami logicznymi zebranymi w klasie \mbox{\hyperlink{class_c_doctor}{C\+Doctor}}. 
+\end{DoxySeeAlso}
+
+\end{DoxyItemize}
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_c_g_doctor_afd2a771ff728d41580909a658af938c9}\label{class_c_g_doctor_afd2a771ff728d41580909a658af938c9}} 
+\index{C\+G\+Doctor@{C\+G\+Doctor}!C\+G\+Doctor@{C\+G\+Doctor}}
+\index{C\+G\+Doctor@{C\+G\+Doctor}!C\+G\+Doctor@{C\+G\+Doctor}}
+\subsubsection{\texorpdfstring{C\+G\+Doctor()}{CGDoctor()}}
+{\footnotesize\ttfamily C\+G\+Doctor\+::\+C\+G\+Doctor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_object}{C\+Object}} $\ast$}]{o }\end{DoxyParamCaption})}
+
+
+
+Konstruktor klasy \mbox{\hyperlink{class_c_g_doctor}{C\+G\+Doctor}}. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em $\ast$o} & wskaźnik na obiekt który graficznie przedstawia klasa \mbox{\hyperlink{class_c_g_doctor}{C\+G\+Doctor}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+obiekt klasy \mbox{\hyperlink{class_c_g_doctor}{C\+G\+Doctor}} 
+\end{DoxyReturn}
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_c_g_doctor_a54058ba434d8d7d0c6bf16c1a9f6536a}\label{class_c_g_doctor_a54058ba434d8d7d0c6bf16c1a9f6536a}} 
+\index{C\+G\+Doctor@{C\+G\+Doctor}!bounding\+Rect@{bounding\+Rect}}
+\index{bounding\+Rect@{bounding\+Rect}!C\+G\+Doctor@{C\+G\+Doctor}}
+\subsubsection{\texorpdfstring{bounding\+Rect()}{boundingRect()}}
+{\footnotesize\ttfamily Q\+RectF C\+G\+Doctor\+::bounding\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Prostokąt obiektu. 
+
+Funkcja nadpisuje funkcję o tej samej nazwie z klasy matki \begin{DoxyReturn}{Zwraca}
+prostokąt typu Q\+RectF 
+\end{DoxyReturn}
+
+
+Implementuje \mbox{\hyperlink{class_c_g_object_ab9edf3d10a53c254cdb5d3d8de930207}{C\+G\+Object}}.
+
+\mbox{\Hypertarget{class_c_g_doctor_a1a4b50cd9ab7f5a94a47d97e58c9475d}\label{class_c_g_doctor_a1a4b50cd9ab7f5a94a47d97e58c9475d}} 
+\index{C\+G\+Doctor@{C\+G\+Doctor}!paint@{paint}}
+\index{paint@{paint}!C\+G\+Doctor@{C\+G\+Doctor}}
+\subsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void C\+G\+Doctor\+::paint (\begin{DoxyParamCaption}\item[{Q\+Painter $\ast$}]{painter,  }\item[{const Q\+Style\+Option\+Graphics\+Item $\ast$}]{option,  }\item[{Q\+Widget $\ast$}]{widget }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Namaluj w oknie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em painter} & \char`\"{}pędzel\char`\"{} malowania obiektu w oknie \\
+\hline
+{\em option} & opcje widgetu \\
+\hline
+{\em widget} & wskaźnik na okno \\
+\hline
+\end{DoxyParams}
+
+
+Implementuje \mbox{\hyperlink{class_c_g_object_a9622c313eb09ca5fc0e34f5d2aaac910}{C\+G\+Object}}.
+
+\mbox{\Hypertarget{class_c_g_doctor_abfb22c548f5d97fddef40b928b7d16bb}\label{class_c_g_doctor_abfb22c548f5d97fddef40b928b7d16bb}} 
+\index{C\+G\+Doctor@{C\+G\+Doctor}!shape@{shape}}
+\index{shape@{shape}!C\+G\+Doctor@{C\+G\+Doctor}}
+\subsubsection{\texorpdfstring{shape()}{shape()}}
+{\footnotesize\ttfamily Q\+Painter\+Path C\+G\+Doctor\+::shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Kształt obiektu graficzengo. 
+
+Funkcja nadpisuje funkcję o tej samej nazwie z klasy matki \begin{DoxyReturn}{Zwraca}
+ścieżka namalowanego obiektu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_g_doctor_a601c4bccc44e7a44540079e873c5ea8f}\label{class_c_g_doctor_a601c4bccc44e7a44540079e873c5ea8f}} 
+\index{C\+G\+Doctor@{C\+G\+Doctor}!updateG@{updateG}}
+\index{updateG@{updateG}!C\+G\+Doctor@{C\+G\+Doctor}}
+\subsubsection{\texorpdfstring{update\+G()}{updateG()}}
+{\footnotesize\ttfamily void C\+G\+Doctor\+::updateG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Odśwież obiekt graficzny. 
+
+Funkcja nadpisuje funkcję o tej samej nazwie z klasy matki 
+
+Implementuje \mbox{\hyperlink{class_c_g_object_a95e80549666e955edd57ab042c2e8ef5}{C\+G\+Object}}.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_c_g_doctor_8h}{C\+G\+Doctor.\+h}}\item 
+\mbox{\hyperlink{_c_g_doctor_8cpp}{C\+G\+Doctor.\+cpp}}\end{DoxyCompactItemize}
